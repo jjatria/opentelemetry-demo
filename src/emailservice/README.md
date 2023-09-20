@@ -12,12 +12,14 @@ rendering it as a log message. It expects a JSON payload like:
 
 ## Local Build
 
-We use `bundler` to manage dependencies. To get started, simply `bundle install`.
+We use `carton` to manage dependencies. To get started, simply `carton install`,
+or run `make snapshot`.
 
 ## Running locally
 
-You may run this service locally with `bundle exec ruby email_server.rb`.
+You may run this service locally with `morbo email_server`, or `make` to run
+inside a container.
 
 ## Docker Build
 
-From `src/emailservice`, run `docker build .`
+From `src/emailservice`, run `docker build .` or `make build`.

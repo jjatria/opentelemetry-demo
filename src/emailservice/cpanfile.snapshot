@@ -1,0 +1,569 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  Class-Method-Modifiers-2.15
+    pathname: E/ET/ETHER/Class-Method-Modifiers-2.15.tar.gz
+    provides:
+      Class::Method::Modifiers 2.15
+    requirements:
+      B 0
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      base 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Data-OptList-0.114
+    pathname: R/RJ/RJBS/Data-OptList-0.114.tar.gz
+    provides:
+      Data::OptList 0.114
+    requirements:
+      ExtUtils::MakeMaker 6.78
+      List::Util 0
+      Params::Util 0
+      Sub::Install 0.921
+      perl 5.012
+      strict 0
+      warnings 0
+  Devel-StackTrace-2.04
+    pathname: D/DR/DROLSKY/Devel-StackTrace-2.04.tar.gz
+    provides:
+      Devel::StackTrace 2.04
+      Devel::StackTrace::Frame 2.04
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      Scalar::Util 0
+      overload 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Email-Abstract-3.009
+    pathname: R/RJ/RJBS/Email-Abstract-3.009.tar.gz
+    provides:
+      Email::Abstract 3.009
+      Email::Abstract::EmailMIME 3.009
+      Email::Abstract::EmailSimple 3.009
+      Email::Abstract::MIMEEntity 3.009
+      Email::Abstract::MailInternet 3.009
+      Email::Abstract::MailMessage 3.009
+      Email::Abstract::Plugin 3.009
+    requirements:
+      Carp 0
+      Email::Simple 1.998
+      ExtUtils::MakeMaker 6.78
+      MRO::Compat 0
+      Module::Pluggable 1.5
+      Scalar::Util 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Email-Address-XS-1.05
+    pathname: P/PA/PALI/Email-Address-XS-1.05.tar.gz
+    provides:
+      Email::Address::XS 1.05
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      XSLoader 0
+      base 0
+      overload 0
+      perl 5.006000
+      strict 0
+      warnings 0
+  Email-Date-Format-1.008
+    pathname: R/RJ/RJBS/Email-Date-Format-1.008.tar.gz
+    provides:
+      Email::Date::Format 1.008
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.78
+      Time::Local 1.27
+      perl 5.012
+      warnings 0
+  Email-MIME-1.953
+    pathname: R/RJ/RJBS/Email-MIME-1.953.tar.gz
+    provides:
+      Email::MIME 1.953
+      Email::MIME::Creator 1.953
+      Email::MIME::Encode 1.953
+      Email::MIME::Header 1.953
+      Email::MIME::Header::AddressList 1.953
+      Email::MIME::Modifier 1.953
+    requirements:
+      Carp 0
+      Email::Address::XS 0
+      Email::MIME::ContentType 1.023
+      Email::MIME::Encodings 1.314
+      Email::MessageID 0
+      Email::Simple 2.212
+      Email::Simple::Creator 0
+      Email::Simple::Header 0
+      Encode 1.9801
+      ExtUtils::MakeMaker 6.78
+      MIME::Base64 0
+      MIME::Types 1.13
+      Module::Runtime 0
+      Scalar::Util 0
+      parent 0
+      perl 5.012
+      strict 0
+      warnings 0
+  Email-MIME-ContentType-1.028
+    pathname: R/RJ/RJBS/Email-MIME-ContentType-1.028.tar.gz
+    provides:
+      Email::MIME::ContentType 1.028
+    requirements:
+      Carp 0
+      Encode 2.87
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.78
+      Text::Unidecode 0
+      perl 5.012
+      warnings 0
+  Email-MIME-Encodings-1.317
+    pathname: R/RJ/RJBS/Email-MIME-Encodings-1.317.tar.gz
+    provides:
+      Email::MIME::Encodings 1.317
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.78
+      MIME::Base64 3.05
+      MIME::QuotedPrint 3.05
+      perl 5.012
+      strict 0
+      warnings 0
+  Email-MessageID-1.408
+    pathname: R/RJ/RJBS/Email-MessageID-1.408.tar.gz
+    provides:
+      Email::MessageID 1.408
+    requirements:
+      ExtUtils::MakeMaker 6.78
+      Sys::Hostname 0
+      overload 0
+      perl 5.012
+      strict 0
+      warnings 0
+  Email-Sender-2.600
+    pathname: R/RJ/RJBS/Email-Sender-2.600.tar.gz
+    provides:
+      Email::Sender 2.600
+      Email::Sender::Failure 2.600
+      Email::Sender::Failure::Multi 2.600
+      Email::Sender::Failure::Permanent 2.600
+      Email::Sender::Failure::Temporary 2.600
+      Email::Sender::Manual 2.600
+      Email::Sender::Manual::QuickStart 2.600
+      Email::Sender::Role::CommonSending 2.600
+      Email::Sender::Role::HasMessage 2.600
+      Email::Sender::Simple 2.600
+      Email::Sender::Success 2.600
+      Email::Sender::Success::Partial 2.600
+      Email::Sender::Transport 2.600
+      Email::Sender::Transport::DevNull 2.600
+      Email::Sender::Transport::Failable 2.600
+      Email::Sender::Transport::Maildir 2.600
+      Email::Sender::Transport::Mbox 2.600
+      Email::Sender::Transport::Print 2.600
+      Email::Sender::Transport::SMTP 2.600
+      Email::Sender::Transport::SMTP::Persistent 2.600
+      Email::Sender::Transport::Sendmail 2.600
+      Email::Sender::Transport::Test 2.600
+      Email::Sender::Transport::Wrapper 2.600
+      Email::Sender::Util 2.600
+    requirements:
+      Carp 0
+      Email::Abstract 3.006
+      Email::Address::XS 0
+      Email::Simple 1.998
+      ExtUtils::MakeMaker 6.78
+      Fcntl 0
+      File::Basename 0
+      File::Path 2.06
+      File::Spec 0
+      IO::File 1.11
+      IO::Handle 0
+      List::Util 1.45
+      Module::Runtime 0
+      Moo 2.000000
+      Moo::Role 0
+      MooX::Types::MooseLike 0.15
+      MooX::Types::MooseLike::Base 0
+      Net::SMTP 3.07
+      Scalar::Util 0
+      Sub::Exporter 0
+      Sub::Exporter::Util 0
+      Sys::Hostname 0
+      Throwable::Error 0.200003
+      Try::Tiny 0
+      perl 5.012
+      strict 0
+      utf8 0
+      warnings 0
+  Email-Simple-2.218
+    pathname: R/RJ/RJBS/Email-Simple-2.218.tar.gz
+    provides:
+      Email::Simple 2.218
+      Email::Simple::Creator 2.218
+      Email::Simple::Header 2.218
+    requirements:
+      Carp 0
+      Email::Date::Format 0
+      ExtUtils::MakeMaker 6.78
+      perl 5.012
+      strict 0
+      warnings 0
+  Email-Stuffer-0.020
+    pathname: R/RJ/RJBS/Email-Stuffer-0.020.tar.gz
+    provides:
+      Email::Stuffer 0.020
+    requirements:
+      Carp 0
+      Email::MIME 1.943
+      Email::MIME::Creator 0
+      Email::Sender::Simple 0
+      ExtUtils::MakeMaker 6.78
+      File::Basename 0
+      Module::Runtime 0
+      Params::Util 1.05
+      Scalar::Util 0
+      perl 5.012
+      warnings 0
+  MIME-Types-2.24
+    pathname: M/MA/MARKOV/MIME-Types-2.24.tar.gz
+    provides:
+      MIME::Type 2.24
+      MIME::Types 2.24
+      MojoX::MIME::Types 2.24
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Spec 0
+      List::Util 0
+      Test::More 0.47
+  MRO-Compat-0.15
+    pathname: H/HA/HAARG/MRO-Compat-0.15.tar.gz
+    provides:
+      MRO::Compat 0.15
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.006
+  Module-Build-0.4234
+    pathname: L/LE/LEONT/Module-Build-0.4234.tar.gz
+    provides:
+      Module::Build 0.4234
+      Module::Build::Base 0.4234
+      Module::Build::Compat 0.4234
+      Module::Build::Config 0.4234
+      Module::Build::Cookbook 0.4234
+      Module::Build::Dumper 0.4234
+      Module::Build::Notes 0.4234
+      Module::Build::PPMMaker 0.4234
+      Module::Build::Platform::Default 0.4234
+      Module::Build::Platform::MacOS 0.4234
+      Module::Build::Platform::Unix 0.4234
+      Module::Build::Platform::VMS 0.4234
+      Module::Build::Platform::VOS 0.4234
+      Module::Build::Platform::Windows 0.4234
+      Module::Build::Platform::aix 0.4234
+      Module::Build::Platform::cygwin 0.4234
+      Module::Build::Platform::darwin 0.4234
+      Module::Build::Platform::os2 0.4234
+      Module::Build::PodParser 0.4234
+    requirements:
+      CPAN::Meta 2.142060
+      Cwd 0
+      Data::Dumper 0
+      ExtUtils::CBuilder 0.27
+      ExtUtils::Install 0
+      ExtUtils::Manifest 0
+      ExtUtils::Mkbootstrap 0
+      ExtUtils::ParseXS 2.21
+      File::Basename 0
+      File::Compare 0
+      File::Copy 0
+      File::Find 0
+      File::Path 0
+      File::Spec 0.82
+      Getopt::Long 0
+      Module::Metadata 1.000002
+      Perl::OSType 1
+      TAP::Harness 3.29
+      Text::Abbrev 0
+      Text::ParseWords 0
+      perl 5.006001
+      version 0.87
+  Module-Pluggable-5.2
+    pathname: S/SI/SIMONW/Module-Pluggable-5.2.tar.gz
+    provides:
+      Devel::InnerPackage 0.4
+      Module::Pluggable 5.2
+      Module::Pluggable::Object 5.2
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Find 0
+      File::Spec 3.00
+      File::Spec::Functions 0
+      if 0
+      perl 5.005030
+      strict 0
+  Module-Runtime-0.016
+    pathname: Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
+    provides:
+      Module::Runtime 0.016
+    requirements:
+      Module::Build 0
+      Test::More 0.41
+      perl 5.006
+      strict 0
+      warnings 0
+  Mojolicious-9.33
+    pathname: S/SR/SRI/Mojolicious-9.33.tar.gz
+    provides:
+      Mojo undef
+      Mojo::Asset undef
+      Mojo::Asset::File undef
+      Mojo::Asset::Memory undef
+      Mojo::Base undef
+      Mojo::ByteStream undef
+      Mojo::Cache undef
+      Mojo::Collection undef
+      Mojo::Content undef
+      Mojo::Content::MultiPart undef
+      Mojo::Content::Single undef
+      Mojo::Cookie undef
+      Mojo::Cookie::Request undef
+      Mojo::Cookie::Response undef
+      Mojo::DOM undef
+      Mojo::DOM::CSS undef
+      Mojo::DOM::HTML undef
+      Mojo::Date undef
+      Mojo::DynamicMethods undef
+      Mojo::EventEmitter undef
+      Mojo::Exception undef
+      Mojo::File undef
+      Mojo::Headers undef
+      Mojo::HelloWorld undef
+      Mojo::Home undef
+      Mojo::IOLoop undef
+      Mojo::IOLoop::Client undef
+      Mojo::IOLoop::Server undef
+      Mojo::IOLoop::Stream undef
+      Mojo::IOLoop::Subprocess undef
+      Mojo::IOLoop::TLS undef
+      Mojo::JSON undef
+      Mojo::JSON::Pointer undef
+      Mojo::Loader undef
+      Mojo::Log undef
+      Mojo::Message undef
+      Mojo::Message::Request undef
+      Mojo::Message::Response undef
+      Mojo::Parameters undef
+      Mojo::Path undef
+      Mojo::Promise undef
+      Mojo::Reactor undef
+      Mojo::Reactor::EV undef
+      Mojo::Reactor::Poll undef
+      Mojo::Server undef
+      Mojo::Server::CGI undef
+      Mojo::Server::Daemon undef
+      Mojo::Server::Hypnotoad undef
+      Mojo::Server::Morbo undef
+      Mojo::Server::Morbo::Backend undef
+      Mojo::Server::Morbo::Backend::Poll undef
+      Mojo::Server::PSGI undef
+      Mojo::Server::Prefork undef
+      Mojo::Template undef
+      Mojo::Transaction undef
+      Mojo::Transaction::HTTP undef
+      Mojo::Transaction::WebSocket undef
+      Mojo::URL undef
+      Mojo::Upload undef
+      Mojo::UserAgent undef
+      Mojo::UserAgent::CookieJar undef
+      Mojo::UserAgent::Proxy undef
+      Mojo::UserAgent::Server undef
+      Mojo::UserAgent::Transactor undef
+      Mojo::Util undef
+      Mojo::WebSocket undef
+      Mojolicious 9.33
+      Mojolicious::Command undef
+      Mojolicious::Command::Author::cpanify undef
+      Mojolicious::Command::Author::generate undef
+      Mojolicious::Command::Author::generate::app undef
+      Mojolicious::Command::Author::generate::dockerfile undef
+      Mojolicious::Command::Author::generate::lite_app undef
+      Mojolicious::Command::Author::generate::makefile undef
+      Mojolicious::Command::Author::generate::plugin undef
+      Mojolicious::Command::Author::inflate undef
+      Mojolicious::Command::cgi undef
+      Mojolicious::Command::daemon undef
+      Mojolicious::Command::eval undef
+      Mojolicious::Command::get undef
+      Mojolicious::Command::prefork undef
+      Mojolicious::Command::psgi undef
+      Mojolicious::Command::routes undef
+      Mojolicious::Command::version undef
+      Mojolicious::Commands undef
+      Mojolicious::Controller undef
+      Mojolicious::Lite undef
+      Mojolicious::Plugin undef
+      Mojolicious::Plugin::Config undef
+      Mojolicious::Plugin::DefaultHelpers undef
+      Mojolicious::Plugin::EPLRenderer undef
+      Mojolicious::Plugin::EPRenderer undef
+      Mojolicious::Plugin::HeaderCondition undef
+      Mojolicious::Plugin::JSONConfig undef
+      Mojolicious::Plugin::Mount undef
+      Mojolicious::Plugin::NotYAMLConfig undef
+      Mojolicious::Plugin::TagHelpers undef
+      Mojolicious::Plugins undef
+      Mojolicious::Renderer undef
+      Mojolicious::Routes undef
+      Mojolicious::Routes::Match undef
+      Mojolicious::Routes::Pattern undef
+      Mojolicious::Routes::Route undef
+      Mojolicious::Sessions undef
+      Mojolicious::Static undef
+      Mojolicious::Types undef
+      Mojolicious::Validator undef
+      Mojolicious::Validator::Validation undef
+      Test::Mojo undef
+      ojo undef
+    requirements:
+      ExtUtils::MakeMaker 0
+      IO::Socket::IP 0.37
+      Sub::Util 1.41
+      perl 5.016
+  Moo-2.005005
+    pathname: H/HA/HAARG/Moo-2.005005.tar.gz
+    provides:
+      Method::Generate::Accessor undef
+      Method::Generate::BuildAll undef
+      Method::Generate::Constructor undef
+      Method::Generate::DemolishAll undef
+      Moo 2.005005
+      Moo::HandleMoose undef
+      Moo::HandleMoose::FakeConstructor undef
+      Moo::HandleMoose::FakeMetaClass undef
+      Moo::HandleMoose::_TypeMap undef
+      Moo::Object undef
+      Moo::Role 2.005005
+      Moo::_Utils undef
+      Moo::sification undef
+      oo undef
+    requirements:
+      Carp 0
+      Class::Method::Modifiers 1.10
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Role::Tiny 2.002003
+      Scalar::Util 1.00
+      Sub::Defer 2.006006
+      Sub::Quote 2.006006
+      perl 5.006
+  MooX-Types-MooseLike-0.29
+    pathname: M/MA/MATEU/MooX-Types-MooseLike-0.29.tar.gz
+    provides:
+      MooX::Types::MooseLike 0.29
+      MooX::Types::MooseLike::Base 0.29
+    requirements:
+      ExtUtils::MakeMaker 0
+      Module::Runtime 0.014
+  Params-Util-1.102
+    pathname: R/RE/REHSACK/Params-Util-1.102.tar.gz
+    provides:
+      Params::Util 1.102
+      Params::Util::PP 1.102
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Path 0
+      File::Spec 0
+      IPC::Cmd 0
+      Scalar::Util 1.18
+      XSLoader 0.22
+      parent 0
+  Role-Tiny-2.002004
+    pathname: H/HA/HAARG/Role-Tiny-2.002004.tar.gz
+    provides:
+      Role::Tiny 2.002004
+      Role::Tiny::With 2.002004
+    requirements:
+      Exporter 5.57
+      perl 5.006
+  Sub-Exporter-0.990
+    pathname: R/RJ/RJBS/Sub-Exporter-0.990.tar.gz
+    provides:
+      Sub::Exporter 0.990
+      Sub::Exporter::Util 0.990
+    requirements:
+      Carp 0
+      Data::OptList 0.100
+      ExtUtils::MakeMaker 6.78
+      Params::Util 0.14
+      Sub::Install 0.92
+      perl 5.008000
+      strict 0
+      warnings 0
+  Sub-Install-0.929
+    pathname: R/RJ/RJBS/Sub-Install-0.929.tar.gz
+    provides:
+      Sub::Install 0.929
+    requirements:
+      B 0
+      Carp 0
+      ExtUtils::MakeMaker 6.78
+      Scalar::Util 0
+      perl 5.008000
+      strict 0
+      warnings 0
+  Sub-Quote-2.006008
+    pathname: H/HA/HAARG/Sub-Quote-2.006008.tar.gz
+    provides:
+      Sub::Defer 2.006008
+      Sub::Quote 2.006008
+    requirements:
+      ExtUtils::MakeMaker 0
+      Scalar::Util 0
+      perl 5.006
+  Text-Unidecode-1.30
+    pathname: S/SB/SBURKE/Text-Unidecode-1.30.tar.gz
+    provides:
+      Text::Unidecode 1.30
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008
+  Throwable-1.001
+    pathname: R/RJ/RJBS/Throwable-1.001.tar.gz
+    provides:
+      StackTrace::Auto 1.001
+      Throwable 1.001
+      Throwable::Error 1.001
+    requirements:
+      Carp 0
+      Devel::StackTrace 1.32
+      ExtUtils::MakeMaker 6.78
+      Module::Runtime 0.002
+      Moo 1.000001
+      Moo::Role 0
+      Scalar::Util 0
+      Sub::Quote 0
+      overload 0
+  Try-Tiny-0.31
+    pathname: E/ET/ETHER/Try-Tiny-0.31.tar.gz
+    provides:
+      Try::Tiny 0.31
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      constant 0
+      perl 5.006
+      strict 0
+      warnings 0
