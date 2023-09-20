@@ -1,0 +1,3 @@
+requires 'Mojolicious';
+requires 'Email::Stuffer';
+# requires 'OpenTelemetry'; # Uncomment when it is on CPAN

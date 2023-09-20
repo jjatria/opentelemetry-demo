@@ -1,0 +1,80 @@
+#!/usr/bin/env perl
+
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+use Mojolicious::Lite -signatures;
+
+use experimental 'try';
+
+use OpenTelemetry;
+use Email::Stuffer;
+
+app->hook(
+  around_dispatch => sub ( $next, $c ) {
+    try { $next->() }
+    catch ($error) {
+      my $verbose = $error->verbose;
+
+      # TODO: helper
+      OpenTelemetry::Trace->span_from_context->add_event(
+        name       => 'exception',
+        attributes => {
+          'exception.type'       => ref $error,
+          'exception.message'    => $error->verbose(0)->message,
+          'exception.stacktrace' => $error->verbose(1)->message,
+        }
+      );
+
+      die $error->verbose($verbose);
+    }
+  }
+);
+
+post '/send_order_confirmation' => sub ($c) {
+  my $data = $c->req->json;
+
+  # Get the current auto-instrumented span
+  my $span = OpenTelemetry::Trace->span_from_context;
+
+  $span->set_attribute(
+    'app.order.id' => $data->{order}{order_id},
+  );
+
+  my $body = $c->render_to_string(
+    template => 'confirmation',
+    order    => $data->{order} ,
+  );
+
+  send_email(
+    to        => $data->{email},
+    html_body => $body,
+  );
+
+  $c->rendered(204);
+};
+
+sub send_email (%args) {
+  my $data = {
+    from      => 'noreply@example.com',
+    subject   => 'Your confirmation email',
+    transport => 'Test',
+    %args,
+  };
+
+  # Create and start a manual span
+  my $tracer = OpenTelemetry->tracer_provider->tracer( name => 'emailservice' );
+  $tracer->in_span( send_email => sub ($span, $context) {
+    Email::Stuffer->new($data)->send;
+
+    $span->set_attribute( 'app.email.recipient' => $data->{to} );
+    app->log->info("Order confirmation email sent to: $data->{to}");
+  });
+
+  # Manually created spans need to be ended
+  # In Perl, the method `in_span` ends them automatically
+  # Check out the OpenTelemetry Perl docs at (NYI):
+  # https://opentelemetry.io/docs/instrumentation/perl/manual/#creating-new-spans
+}
+
+app->start;

@@ -5,6 +5,7 @@
 *.ipr
 *.iws
 *.pyc
+*.swp
 .nb-gradle
 .nb-gradle-properties
 .swp
@@ -40,6 +41,8 @@ composer.lock
 src/frontend/cypress/videos
 src/frontend/cypress/screenshots
 src/shippingservice/target/
+src/emailservice/.cpanm
+src/emailservice/local
 test/tracetesting/tracetesting-vars.yaml
 
 # Ignore copied/generated protobuf files

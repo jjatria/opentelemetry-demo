@@ -1,27 +1,27 @@
 # Copyright The OpenTelemetry Authors
 # SPDX-License-Identifier: Apache-2.0
+FROM perl:5.38 as base
 
+RUN cpm install --global Carton
 
-FROM ruby:3.2.2-slim as base
-
-FROM base as builder
+FROM base AS builder
 
 WORKDIR /tmp
 
-COPY ./src/emailservice/Gemfile ./src/emailservice/Gemfile.lock ./
+COPY cpanfile cpanfile.snapshot .
 
-#RUN apk update && apk add make gcc musl-dev gcompat && bundle install
-RUN apt-get update && apt-get install build-essential -y && bundle install
-FROM base as release
+# Install OpenTelemetry from repo for now, from CPAN later
+RUN cpanm --installdeps --notest --quiet https://github.com/jjatria/perl-opentelemetry.git \
+ && cpanm --verbose https://github.com/jjatria/perl-opentelemetry.git \
+ && cpm install --global
+
+FROM builder as release
 
 WORKDIR /email_server
 
-COPY ./src/emailservice/ .
-
-RUN chmod 666 ./Gemfile.lock
-
-COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
-
+COPY email_server .
+COPY templates templates
 
 EXPOSE ${EMAIL_SERVICE_PORT}
-ENTRYPOINT ["bundle", "exec", "ruby", "email_server.rb"]
+
+ENTRYPOINT ["morbo", "email_server"]
