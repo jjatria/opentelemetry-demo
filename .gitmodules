@@ -1,0 +1,9 @@
+[submodule "src/emailservice/api"]
+	path = src/emailservice/api
+	url = git@github.com:jjatria/perl-opentelemetry.git
+[submodule "src/emailservice/sdk"]
+	path = src/emailservice/sdk
+	url = git@github.com:jjatria/perl-opentelemetry-sdk.git
+[submodule "src/emailservice/otlp"]
+	path = src/emailservice/otlp
+	url = git@github.com:jjatria/perl-opentelemetry-exporter-otlp.git
