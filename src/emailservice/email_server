@@ -4,32 +4,107 @@
 # SPDX-License-Identifier: Apache-2.0
 
 use Mojolicious::Lite -signatures;
+use Log::Any::Adapter 'MojoLog';
+use Metrics::Any::Adapter 'Stderr';
 
-use experimental 'try';
+use experimental qw( isa try );
 
 use OpenTelemetry;
+use OpenTelemetry::Constants qw(
+    SPAN_KIND_SERVER
+    SPAN_STATUS_ERROR
+    SPAN_STATUS_OK
+);
+use OpenTelemetry::Context;
+use OpenTelemetry::SDK;
+use Syntax::Keyword::Dynamically;
+use OpenTelemetry::Integration qw( DBI HTTP::Tiny );
 use Email::Stuffer;
 
-app->hook(
-  around_dispatch => sub ( $next, $c ) {
-    try { $next->() }
-    catch ($error) {
-      my $verbose = $error->verbose;
+use Mojo::SQLite;
+use HTTP::Tiny;
 
-      # TODO: helper
-      OpenTelemetry::Trace->span_from_context->add_event(
-        name       => 'exception',
-        attributes => {
-          'exception.type'       => ref $error,
-          'exception.message'    => $error->verbose(0)->message,
+helper sql => sub { state $sql = Mojo::SQLite->new; $sql };
+
+hook around_dispatch => sub ( $next, $c ) {
+  my $tracer = OpenTelemetry->tracer_provider->tracer( name => 'emailservice' );
+
+  try {
+    $next->();
+  }
+  catch ($error) {
+    my ( $stacktrace, $message );
+
+    if ( $error isa Mojo::Exception ) {
+      my $verbose = $error->verbose;
+      $message = $error->verbose(0)->message;
+
+      my $span = OpenTelemetry::Trace->span_from_context->record_exception(
+        $error => (
+          'exception.message'    => $message,
           'exception.stacktrace' => $error->verbose(1)->message,
-        }
+        ),
       );
 
-      die $error->verbose($verbose);
+      $stacktrace = $error->verbose(1)->message,
+      $error->verbose($verbose);
     }
+    else {
+      $message = "$error";
+    }
+
+    my $span = OpenTelemetry::Trace->span_from_context->record_exception(
+      $error => (
+        'exception.message'    => $message,
+        'exception.stacktrace' => $stacktrace,
+      ),
+    );
+
+    $span->set_status( SPAN_STATUS_ERROR, $message );
+    $span->end;
+
+    die $error;
   }
-);
+};
+
+hook around_action  => sub ( $next, $c, $action, $last ) {
+  my $tracer = OpenTelemetry->tracer_provider->tracer( name => 'emailservice' );
+
+  my $req = $c->tx->req;
+  my $route = $req->url->path->to_string;
+
+  my $context = OpenTelemetry->propagator->extract(
+    $req->headers->to_hash,
+    undef,
+    sub ( $carrier, $key ) { $carrier->{ ucfirst $key } },
+  );
+
+  dynamically OpenTelemetry::Context->current = $context;
+
+  $tracer->in_span(
+    $req->method . ' ' . $route => (
+      kind       => SPAN_KIND_SERVER,
+      attributes => {
+        'component'   => 'http',
+        'http.method' => $req->method,
+        'http.route'  => $route,
+        'http.url'    => $req->url->to_string,
+      }
+    ),
+    sub ($span, $context) {
+      $next->();
+      $span->set_status( SPAN_STATUS_OK );
+      $span->set_attribute( 'http.status_code' => $c->tx->res->code );
+    },
+  );
+};
+
+app->sql->migrations->name('test')->from_string(<<'EOF')->migrate;
+-- 1 up
+create table known_emails (id integer primary key autoincrement, email text);
+-- 1 down
+drop table known_emails;
+EOF
 
 post '/send_order_confirmation' => sub ($c) {
   my $data = $c->req->json;
@@ -51,7 +126,10 @@ post '/send_order_confirmation' => sub ($c) {
     html_body => $body,
   );
 
-  $c->rendered(204);
+  my $res = HTTP::Tiny->new->get('http://httpbin/anything');
+  app->log->trace('Call was ' . $res->{status});
+
+  $c->rendered(200);
 };
 
 sub send_email (%args) {
@@ -64,11 +142,29 @@ sub send_email (%args) {
 
   # Create and start a manual span
   my $tracer = OpenTelemetry->tracer_provider->tracer( name => 'emailservice' );
+
   $tracer->in_span( send_email => sub ($span, $context) {
     Email::Stuffer->new($data)->send;
 
     $span->set_attribute( 'app.email.recipient' => $data->{to} );
     app->log->info("Order confirmation email sent to: $data->{to}");
+
+    my $seen = app->sql->db
+      ->select( known_emails => ['id'] => { email => $data->{to} } )
+      ->arrays
+      ->size;
+
+    if ($seen) {
+        app->log->trace("$data->{to} is a known email");
+    }
+    else {
+        app->log->trace("$data->{to} is a new email");
+        app->sql->db
+          ->insert( known_emails => { email => $data->{to} } )
+          ->last_insert_id;
+    }
+
+    $span->set_status( SPAN_STATUS_OK );
   });
 
   # Manually created spans need to be ended

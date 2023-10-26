@@ -1,3 +1,33 @@
-requires 'Mojolicious';
 requires 'Email::Stuffer';
-# requires 'OpenTelemetry'; # Uncomment when it is on CPAN
+requires 'IO::Async';
+requires 'IO::Async::Loop::Mojo';
+requires 'Log::Any::Adapter::MojoLog';
+requires 'Mojolicious';
+
+# Uncomment when these are on CPAN
+# requires 'OpenTelemetry';
+# requires 'OpenTelemetry::SDK';
+# requires 'OpenTelemetry::SDK::Trace::Span::Exporter::OTLP';
+
+# Indirect dependencies, here to make installation faster
+requires 'Bytes::Random::Secure';
+requires 'Compress::Zlib';
+requires 'Exporter::Tiny';
+requires 'Feature::Compat::Defer';
+requires 'File::Share';
+requires 'Future::AsyncAwait';
+requires 'Google::ProtocolBuffers::Dynamic';
+requires 'Metrics::Any';
+requires 'Mutex';
+requires 'Net::Async::HTTP';
+requires 'Object::Pad';
+requires 'Path::Tiny';
+requires 'Ref::Util';
+requires 'Syntax::Keyword::Dynamically';
+requires 'Test2::V0';
+requires 'X::Tiny';
+requires 'Sentinel';
+requires 'namespace::clean';
+
+# Only for testing
+requires 'Mojo::SQLite';
