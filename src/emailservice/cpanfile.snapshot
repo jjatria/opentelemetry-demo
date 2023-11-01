@@ -1622,40 +1622,41 @@ DISTRIBUTIONS
       XS::Parse::Sublike 0.15
       XS::Parse::Sublike::Builder 0.15
       perl 5.018
-  OpenTelemetry-0.010
-    pathname: J/JJ/JJATRIA/OpenTelemetry-0.010.tar.gz
+  OpenTelemetry-0.011
+    pathname: J/JJ/JJATRIA/OpenTelemetry-0.011.tar.gz
     provides:
-      OpenTelemetry 0.010
-      OpenTelemetry::Attributes 0.010
-      OpenTelemetry::Baggage 0.010
-      OpenTelemetry::Constants 0.010
-      OpenTelemetry::Context 0.010
-      OpenTelemetry::Exporter 0.010
-      OpenTelemetry::Integration 0.010
-      OpenTelemetry::Integration::DBI 0.010
-      OpenTelemetry::Integration::HTTP::Tiny 0.010
-      OpenTelemetry::Integration::LWP::UserAgent 0.010
-      OpenTelemetry::Propagator 0.010
-      OpenTelemetry::Propagator::Baggage 0.010
-      OpenTelemetry::Propagator::Composite 0.010
-      OpenTelemetry::Propagator::None 0.010
-      OpenTelemetry::Propagator::TextMap 0.010
-      OpenTelemetry::Propagator::TraceContext 0.010
-      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.010
-      OpenTelemetry::Propagator::TraceContext::TraceParent 0.010
-      OpenTelemetry::Propagator::TraceContext::TraceState 0.010
-      OpenTelemetry::Trace 0.010
-      OpenTelemetry::Trace::Event 0.010
-      OpenTelemetry::Trace::Link 0.010
-      OpenTelemetry::Trace::Span 0.010
-      OpenTelemetry::Trace::Span::Processor 0.010
-      OpenTelemetry::Trace::SpanContext 0.010
-      OpenTelemetry::Trace::Tracer 0.010
-      OpenTelemetry::Trace::TracerProvider 0.010
-      OpenTelemetry::X 0.010
-      OpenTelemetry::X::Invalid 0.010
-      OpenTelemetry::X::Parsing 0.010
-      OpenTelemetry::X::Unsupported 0.010
+      OpenTelemetry 0.011
+      OpenTelemetry::Attributes 0.011
+      OpenTelemetry::Baggage 0.011
+      OpenTelemetry::Constants 0.011
+      OpenTelemetry::Context 0.011
+      OpenTelemetry::Exporter 0.011
+      OpenTelemetry::Integration 0.011
+      OpenTelemetry::Integration::DBI 0.011
+      OpenTelemetry::Integration::HTTP::Tiny 0.011
+      OpenTelemetry::Integration::LWP::UserAgent 0.011
+      OpenTelemetry::Propagator 0.011
+      OpenTelemetry::Propagator::Baggage 0.011
+      OpenTelemetry::Propagator::Composite 0.011
+      OpenTelemetry::Propagator::None 0.011
+      OpenTelemetry::Propagator::TextMap 0.011
+      OpenTelemetry::Propagator::TraceContext 0.011
+      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.011
+      OpenTelemetry::Propagator::TraceContext::TraceParent 0.011
+      OpenTelemetry::Propagator::TraceContext::TraceState 0.011
+      OpenTelemetry::Trace 0.011
+      OpenTelemetry::Trace::Event 0.011
+      OpenTelemetry::Trace::Link 0.011
+      OpenTelemetry::Trace::Span 0.011
+      OpenTelemetry::Trace::Span::Processor 0.011
+      OpenTelemetry::Trace::Span::Status 0.011
+      OpenTelemetry::Trace::SpanContext 0.011
+      OpenTelemetry::Trace::Tracer 0.011
+      OpenTelemetry::Trace::TracerProvider 0.011
+      OpenTelemetry::X 0.011
+      OpenTelemetry::X::Invalid 0.011
+      OpenTelemetry::X::Parsing 0.011
+      OpenTelemetry::X::Unsupported 0.011
     requirements:
       Bytes::Random::Secure 0
       Class::Method::Modifiers 0
@@ -1678,26 +1679,26 @@ DISTRIBUTIONS
       UUID::URandom 0
       X::Tiny 0
       perl v5.32.0
-  OpenTelemetry-SDK-0.010
-    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.010.tar.gz
+  OpenTelemetry-SDK-0.011
+    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.011.tar.gz
     provides:
-      OpenTelemetry::SDK 0.010
-      OpenTelemetry::SDK::Exporter::Console 0.010
-      OpenTelemetry::SDK::InstrumentationScope 0.010
-      OpenTelemetry::SDK::Resource 0.010
-      OpenTelemetry::SDK::Trace::Sampler 0.010
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.010
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.010
-      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.010
-      OpenTelemetry::SDK::Trace::Sampler::Result 0.010
-      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.010
-      OpenTelemetry::SDK::Trace::Span 0.010
-      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.010
-      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.010
-      OpenTelemetry::SDK::Trace::Span::Readable 0.010
-      OpenTelemetry::SDK::Trace::SpanLimits 0.010
-      OpenTelemetry::SDK::Trace::Tracer 0.010
-      OpenTelemetry::SDK::Trace::TracerProvider 0.010
+      OpenTelemetry::SDK 0.011
+      OpenTelemetry::SDK::Exporter::Console 0.011
+      OpenTelemetry::SDK::InstrumentationScope 0.011
+      OpenTelemetry::SDK::Resource 0.011
+      OpenTelemetry::SDK::Trace::Sampler 0.011
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.011
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.011
+      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.011
+      OpenTelemetry::SDK::Trace::Sampler::Result 0.011
+      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.011
+      OpenTelemetry::SDK::Trace::Span 0.011
+      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.011
+      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.011
+      OpenTelemetry::SDK::Trace::Span::Readable 0.011
+      OpenTelemetry::SDK::Trace::SpanLimits 0.011
+      OpenTelemetry::SDK::Trace::Tracer 0.011
+      OpenTelemetry::SDK::Trace::TracerProvider 0.011
     requirements:
       Feature::Compat::Try 0
       Future 0.26
