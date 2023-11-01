@@ -297,6 +297,22 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Storable 0
       perl 5.008001
+  Cpanel-JSON-XS-4.37
+    pathname: R/RU/RURBAN/Cpanel-JSON-XS-4.37.tar.gz
+    provides:
+      Cpanel::JSON::XS 4.37
+      Cpanel::JSON::XS::Type undef
+    requirements:
+      Carp 0
+      Config 0
+      Encode 1.9801
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Pod::Text 2.08
+      XSLoader 0
+      overload 0
+      strict 0
+      warnings 0
   Crypt-Random-Seed-0.03
     pathname: D/DA/DANAJ/Crypt-Random-Seed-0.03.tar.gz
     provides:
@@ -325,6 +341,17 @@ DISTRIBUTIONS
       Time::HiRes 1.9711
       base 0
       perl 5.006002
+  Crypt-URandom-0.39
+    pathname: D/DD/DDICK/Crypt-URandom-0.39.tar.gz
+    provides:
+      Crypt::URandom 0.39
+    requirements:
+      Carp 0
+      English 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      FileHandle 0
+      perl 5.006
   DBD-SQLite-1.72
     pathname: I/IS/ISHIGAKI/DBD-SQLite-1.72.tar.gz
     provides:
@@ -833,6 +860,13 @@ DISTRIBUTIONS
     requirements:
       Module::Build 0.4004
       perl 5.014
+  Feature-Compat-Try-0.05
+    pathname: P/PE/PEVANS/Feature-Compat-Try-0.05.tar.gz
+    provides:
+      Feature::Compat::Try 0.05
+    requirements:
+      Module::Build 0.4004
+      perl 5.014
   File-Share-0.27
     pathname: I/IN/INGY/File-Share-0.27.tar.gz
     provides:
@@ -1111,6 +1145,17 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.008001
+  JSON-MaybeXS-1.004005
+    pathname: E/ET/ETHER/JSON-MaybeXS-1.004005.tar.gz
+    provides:
+      JSON::MaybeXS 1.004005
+    requirements:
+      Carp 0
+      Cpanel::JSON::XS 2.3310
+      ExtUtils::MakeMaker 0
+      JSON::PP 2.27300
+      Scalar::Util 0
+      perl 5.006
   LWP-MediaTypes-6.04
     pathname: O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz
     provides:
@@ -1577,6 +1622,94 @@ DISTRIBUTIONS
       XS::Parse::Sublike 0.15
       XS::Parse::Sublike::Builder 0.15
       perl 5.018
+  OpenTelemetry-0.010
+    pathname: J/JJ/JJATRIA/OpenTelemetry-0.010.tar.gz
+    provides:
+      OpenTelemetry 0.010
+      OpenTelemetry::Attributes 0.010
+      OpenTelemetry::Baggage 0.010
+      OpenTelemetry::Constants 0.010
+      OpenTelemetry::Context 0.010
+      OpenTelemetry::Exporter 0.010
+      OpenTelemetry::Integration 0.010
+      OpenTelemetry::Integration::DBI 0.010
+      OpenTelemetry::Integration::HTTP::Tiny 0.010
+      OpenTelemetry::Integration::LWP::UserAgent 0.010
+      OpenTelemetry::Propagator 0.010
+      OpenTelemetry::Propagator::Baggage 0.010
+      OpenTelemetry::Propagator::Composite 0.010
+      OpenTelemetry::Propagator::None 0.010
+      OpenTelemetry::Propagator::TextMap 0.010
+      OpenTelemetry::Propagator::TraceContext 0.010
+      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.010
+      OpenTelemetry::Propagator::TraceContext::TraceParent 0.010
+      OpenTelemetry::Propagator::TraceContext::TraceState 0.010
+      OpenTelemetry::Trace 0.010
+      OpenTelemetry::Trace::Event 0.010
+      OpenTelemetry::Trace::Link 0.010
+      OpenTelemetry::Trace::Span 0.010
+      OpenTelemetry::Trace::Span::Processor 0.010
+      OpenTelemetry::Trace::SpanContext 0.010
+      OpenTelemetry::Trace::Tracer 0.010
+      OpenTelemetry::Trace::TracerProvider 0.010
+      OpenTelemetry::X 0.010
+      OpenTelemetry::X::Invalid 0.010
+      OpenTelemetry::X::Parsing 0.010
+      OpenTelemetry::X::Unsupported 0.010
+    requirements:
+      Bytes::Random::Secure 0
+      Class::Method::Modifiers 0
+      Exporter::Tiny 0.044
+      Feature::Compat::Defer 0
+      Feature::Compat::Try 0
+      Future 0.26
+      Future::AsyncAwait 0
+      List::Util 1.45
+      Log::Any 0
+      Module::Build::Tiny 0.034
+      Module::Pluggable 0
+      Mutex 0
+      Object::Pad 0.74
+      Ref::Util 0
+      Sentinel 0
+      Syntax::Keyword::Dynamically 0
+      URI 0
+      URL::Encode 0
+      UUID::URandom 0
+      X::Tiny 0
+      perl v5.32.0
+  OpenTelemetry-SDK-0.010
+    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.010.tar.gz
+    provides:
+      OpenTelemetry::SDK 0.010
+      OpenTelemetry::SDK::Exporter::Console 0.010
+      OpenTelemetry::SDK::InstrumentationScope 0.010
+      OpenTelemetry::SDK::Resource 0.010
+      OpenTelemetry::SDK::Trace::Sampler 0.010
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.010
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.010
+      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.010
+      OpenTelemetry::SDK::Trace::Sampler::Result 0.010
+      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.010
+      OpenTelemetry::SDK::Trace::Span 0.010
+      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.010
+      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.010
+      OpenTelemetry::SDK::Trace::Span::Readable 0.010
+      OpenTelemetry::SDK::Trace::SpanLimits 0.010
+      OpenTelemetry::SDK::Trace::Tracer 0.010
+      OpenTelemetry::SDK::Trace::TracerProvider 0.010
+    requirements:
+      Feature::Compat::Try 0
+      Future 0.26
+      Future::AsyncAwait 0.38
+      IO::Async::Loop 0
+      Metrics::Any 0
+      Module::Build::Tiny 0.034
+      Mutex 0
+      Object::Pad 0.74
+      OpenTelemetry 0
+      String::CRC32 0
+      perl v5.32.0
   Package-Stash-0.40
     pathname: E/ET/ETHER/Package-Stash-0.40.tar.gz
     provides:
@@ -1723,6 +1856,14 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       SQL::Abstract 2.0
       perl 5.016
+  Sentinel-0.07
+    pathname: P/PE/PEVANS/Sentinel-0.07.tar.gz
+    provides:
+      Sentinel 0.07
+    requirements:
+      ExtUtils::CBuilder 0
+      Module::Build 0.4004
+      perl 5.014
   Shell-Config-Generate-0.34
     pathname: P/PL/PLICEASE/Shell-Config-Generate-0.34.tar.gz
     provides:
@@ -1755,6 +1896,12 @@ DISTRIBUTIONS
       Spiffy::mixin undef
     requirements:
       ExtUtils::MakeMaker 6.30
+  String-CRC32-2.100
+    pathname: L/LE/LEEJO/String-CRC32-2.100.tar.gz
+    provides:
+      String::CRC32 2.100
+    requirements:
+      ExtUtils::MakeMaker 0
   Struct-Dumb-0.14
     pathname: P/PE/PEVANS/Struct-Dumb-0.14.tar.gz
     provides:
@@ -2300,6 +2447,29 @@ DISTRIBUTIONS
       URI 1.40
       URI::Nested 0.10
       perl 5.008001
+  URL-Encode-0.03
+    pathname: C/CH/CHANSEN/URL-Encode-0.03.tar.gz
+    provides:
+      URL::Encode 0.03
+      URL::Encode::PP 0.03
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.59
+      Test::More 0.88
+      XSLoader 0
+      perl 5.008001
+  UUID-URandom-0.001
+    pathname: D/DA/DAGOLDEN/UUID-URandom-0.001.tar.gz
+    provides:
+      UUID::URandom 0.001
+    requirements:
+      Crypt::URandom 0.36
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.17
+      perl 5.008
+      strict 0
+      warnings 0
   Variable-Magic-0.63
     pathname: V/VP/VPIT/Variable-Magic-0.63.tar.gz
     provides:
