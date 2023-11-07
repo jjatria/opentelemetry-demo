@@ -8,6 +8,7 @@ build: snapshot
 	docker build --tag otel_demo_email_server .
 
 snapshot: base
+	rm -rf local/lib/perl5/OpenTelemetry* cpanfile.snapshot
 	docker run --rm                                    \
 		--env PERL_CPANM_HOME=/email_server/.cpanm \
 		--user "$$( id -u ):$$( id -g )"           \
