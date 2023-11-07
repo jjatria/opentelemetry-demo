@@ -21,3 +21,4 @@ base:
 
 clean:
 	rm -rf .cpanm local
+	docker rmi otel_demo_email_server_base
