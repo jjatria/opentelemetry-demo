@@ -5,17 +5,11 @@ requires 'Log::Any::Adapter::MojoLog';
 requires 'Mojolicious';
 requires 'OpenTelemetry';
 requires 'OpenTelemetry::SDK';
+requires 'OpenTelemetry::Exporter::OTLP';
 
-# Uncomment when these are on CPAN
-# requires 'OpenTelemetry::Exporter::OTLP';
-
-# Indirect dependencies, here to make installation faster
+# Optional dependencies, for additional features
 requires 'Compress::Zlib';
-requires 'File::Share';
 requires 'Google::ProtocolBuffers::Dynamic';
-requires 'JSON::MaybeXS';
-requires 'Metrics::Any';
-requires 'Path::Tiny';
 
 # Only for testing
 requires 'Mojo::SQLite';
