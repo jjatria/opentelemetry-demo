@@ -1622,41 +1622,41 @@ DISTRIBUTIONS
       XS::Parse::Sublike 0.15
       XS::Parse::Sublike::Builder 0.15
       perl 5.018
-  OpenTelemetry-0.011
-    pathname: J/JJ/JJATRIA/OpenTelemetry-0.011.tar.gz
+  OpenTelemetry-0.013
+    pathname: J/JJ/JJATRIA/OpenTelemetry-0.013.tar.gz
     provides:
-      OpenTelemetry 0.011
-      OpenTelemetry::Attributes 0.011
-      OpenTelemetry::Baggage 0.011
-      OpenTelemetry::Constants 0.011
-      OpenTelemetry::Context 0.011
-      OpenTelemetry::Exporter 0.011
-      OpenTelemetry::Integration 0.011
-      OpenTelemetry::Integration::DBI 0.011
-      OpenTelemetry::Integration::HTTP::Tiny 0.011
-      OpenTelemetry::Integration::LWP::UserAgent 0.011
-      OpenTelemetry::Propagator 0.011
-      OpenTelemetry::Propagator::Baggage 0.011
-      OpenTelemetry::Propagator::Composite 0.011
-      OpenTelemetry::Propagator::None 0.011
-      OpenTelemetry::Propagator::TextMap 0.011
-      OpenTelemetry::Propagator::TraceContext 0.011
-      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.011
-      OpenTelemetry::Propagator::TraceContext::TraceParent 0.011
-      OpenTelemetry::Propagator::TraceContext::TraceState 0.011
-      OpenTelemetry::Trace 0.011
-      OpenTelemetry::Trace::Event 0.011
-      OpenTelemetry::Trace::Link 0.011
-      OpenTelemetry::Trace::Span 0.011
-      OpenTelemetry::Trace::Span::Processor 0.011
-      OpenTelemetry::Trace::Span::Status 0.011
-      OpenTelemetry::Trace::SpanContext 0.011
-      OpenTelemetry::Trace::Tracer 0.011
-      OpenTelemetry::Trace::TracerProvider 0.011
-      OpenTelemetry::X 0.011
-      OpenTelemetry::X::Invalid 0.011
-      OpenTelemetry::X::Parsing 0.011
-      OpenTelemetry::X::Unsupported 0.011
+      OpenTelemetry 0.013
+      OpenTelemetry::Attributes 0.013
+      OpenTelemetry::Baggage 0.013
+      OpenTelemetry::Constants 0.013
+      OpenTelemetry::Context 0.013
+      OpenTelemetry::Exporter 0.013
+      OpenTelemetry::Integration 0.013
+      OpenTelemetry::Integration::DBI 0.013
+      OpenTelemetry::Integration::HTTP::Tiny 0.013
+      OpenTelemetry::Integration::LWP::UserAgent 0.013
+      OpenTelemetry::Propagator 0.013
+      OpenTelemetry::Propagator::Baggage 0.013
+      OpenTelemetry::Propagator::Composite 0.013
+      OpenTelemetry::Propagator::None 0.013
+      OpenTelemetry::Propagator::TextMap 0.013
+      OpenTelemetry::Propagator::TraceContext 0.013
+      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.013
+      OpenTelemetry::Propagator::TraceContext::TraceParent 0.013
+      OpenTelemetry::Propagator::TraceContext::TraceState 0.013
+      OpenTelemetry::Trace 0.013
+      OpenTelemetry::Trace::Event 0.013
+      OpenTelemetry::Trace::Link 0.013
+      OpenTelemetry::Trace::Span 0.013
+      OpenTelemetry::Trace::Span::Processor 0.013
+      OpenTelemetry::Trace::Span::Status 0.013
+      OpenTelemetry::Trace::SpanContext 0.013
+      OpenTelemetry::Trace::Tracer 0.013
+      OpenTelemetry::Trace::TracerProvider 0.013
+      OpenTelemetry::X 0.013
+      OpenTelemetry::X::Invalid 0.013
+      OpenTelemetry::X::Parsing 0.013
+      OpenTelemetry::X::Unsupported 0.013
     requirements:
       Bytes::Random::Secure 0
       Class::Method::Modifiers 0
@@ -1679,26 +1679,47 @@ DISTRIBUTIONS
       UUID::URandom 0
       X::Tiny 0
       perl v5.32.0
-  OpenTelemetry-SDK-0.011
-    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.011.tar.gz
+  OpenTelemetry-Exporter-OTLP-0.010
+    pathname: J/JJ/JJATRIA/OpenTelemetry-Exporter-OTLP-0.010.tar.gz
     provides:
-      OpenTelemetry::SDK 0.011
-      OpenTelemetry::SDK::Exporter::Console 0.011
-      OpenTelemetry::SDK::InstrumentationScope 0.011
-      OpenTelemetry::SDK::Resource 0.011
-      OpenTelemetry::SDK::Trace::Sampler 0.011
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.011
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.011
-      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.011
-      OpenTelemetry::SDK::Trace::Sampler::Result 0.011
-      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.011
-      OpenTelemetry::SDK::Trace::Span 0.011
-      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.011
-      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.011
-      OpenTelemetry::SDK::Trace::Span::Readable 0.011
-      OpenTelemetry::SDK::Trace::SpanLimits 0.011
-      OpenTelemetry::SDK::Trace::Tracer 0.011
-      OpenTelemetry::SDK::Trace::TracerProvider 0.011
+      OpenTelemetry::Exporter::OTLP 0.010
+      OpenTelemetry::Exporter::OTLP::Encoder::JSON 0.010
+      OpenTelemetry::Exporter::OTLP::Encoder::Protobuf 0.010
+      OpenTelemetry::Proto 0.010
+    requirements:
+      ExtUtils::MakeMaker 0
+      Feature::Compat::Try 0
+      File::Share 0
+      File::ShareDir::Install 0.06
+      HTTP::Tiny 0
+      JSON::MaybeXS 0
+      Metrics::Any 0
+      Object::Pad 0
+      Path::Tiny 0
+      Syntax::Keyword::Dynamically 0
+      Syntax::Keyword::Match 0
+      Time::Piece 0
+      perl 5.020000
+  OpenTelemetry-SDK-0.013
+    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.013.tar.gz
+    provides:
+      OpenTelemetry::SDK 0.013
+      OpenTelemetry::SDK::Exporter::Console 0.013
+      OpenTelemetry::SDK::InstrumentationScope 0.013
+      OpenTelemetry::SDK::Resource 0.013
+      OpenTelemetry::SDK::Trace::Sampler 0.013
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.013
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.013
+      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.013
+      OpenTelemetry::SDK::Trace::Sampler::Result 0.013
+      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.013
+      OpenTelemetry::SDK::Trace::Span 0.013
+      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.013
+      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.013
+      OpenTelemetry::SDK::Trace::Span::Readable 0.013
+      OpenTelemetry::SDK::Trace::SpanLimits 0.013
+      OpenTelemetry::SDK::Trace::Tracer 0.013
+      OpenTelemetry::SDK::Trace::TracerProvider 0.013
     requirements:
       Feature::Compat::Try 0
       Future 0.26
@@ -1972,6 +1993,17 @@ DISTRIBUTIONS
       XS::Parse::Keyword 0.13
       XS::Parse::Keyword::Builder 0.13
       perl 5.014
+  Syntax-Keyword-Match-0.13
+    pathname: P/PE/PEVANS/Syntax-Keyword-Match-0.13.tar.gz
+    provides:
+      Syntax::Keyword::Match 0.13
+    requirements:
+      ExtUtils::CBuilder 0
+      Module::Build 0.4004
+      XS::Parse::Infix::Builder 0
+      XS::Parse::Keyword 0.36
+      XS::Parse::Keyword::Builder 0.36
+      perl 5.016
   Term-Table-0.016
     pathname: E/EX/EXODIST/Term-Table-0.016.tar.gz
     provides:
