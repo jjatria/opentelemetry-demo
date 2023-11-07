@@ -27,12 +27,12 @@ RUN cpm install --global
 # # Install dev version of SDK
 # COPY ./sdk/ /tmp/sdk/
 # RUN cpanm --verbose /tmp/sdk
-
+#
 # Install dev version of OTLP exporter
-COPY ./otlp/ /tmp/otlp/
-RUN cpanm --verbose /tmp/otlp
-
-RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
+# COPY ./otlp/ /tmp/otlp/
+# RUN cpanm --verbose /tmp/otlp
+#
+# RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
 
 FROM builder as release
 
