@@ -24,80 +24,11 @@ use Email::Stuffer;
 use Mojo::SQLite;
 use HTTP::Tiny;
 
+use lib 'lib';
+
+plugin 'OpenTelemetry';
+
 helper sql => sub { state $sql = Mojo::SQLite->new; $sql };
-
-hook around_dispatch => sub ( $next, $c ) {
-  my $tracer = OpenTelemetry->tracer_provider->tracer( name => 'emailservice' );
-
-  try {
-    $next->();
-  }
-  catch ($error) {
-    my ( $stacktrace, $message );
-
-    if ( $error isa Mojo::Exception ) {
-      my $verbose = $error->verbose;
-      $message = $error->verbose(0)->message;
-
-      my $span = OpenTelemetry::Trace->span_from_context->record_exception(
-        $error => (
-          'exception.message'    => $message,
-          'exception.stacktrace' => $error->verbose(1)->message,
-        ),
-      );
-
-      $stacktrace = $error->verbose(1)->message,
-      $error->verbose($verbose);
-    }
-    else {
-      $message = "$error";
-    }
-
-    my $span = OpenTelemetry::Trace->span_from_context->record_exception(
-      $error => (
-        'exception.message'    => $message,
-        'exception.stacktrace' => $stacktrace,
-      ),
-    );
-
-    $span->set_status( SPAN_STATUS_ERROR, $message );
-    $span->end;
-
-    die $error;
-  }
-};
-
-hook around_action  => sub ( $next, $c, $action, $last ) {
-  my $tracer = OpenTelemetry->tracer_provider->tracer( name => 'emailservice' );
-
-  my $req = $c->tx->req;
-  my $route = $req->url->path->to_string;
-
-  my $context = OpenTelemetry->propagator->extract(
-    $req->headers->to_hash,
-    undef,
-    sub ( $carrier, $key ) { $carrier->{ ucfirst $key } },
-  );
-
-  dynamically OpenTelemetry::Context->current = $context;
-
-  $tracer->in_span(
-    $req->method . ' ' . $route => (
-      kind       => SPAN_KIND_SERVER,
-      attributes => {
-        'component'   => 'http',
-        'http.method' => $req->method,
-        'http.route'  => $route,
-        'http.url'    => $req->url->to_string,
-      }
-    ),
-    sub ($span, $context) {
-      $next->();
-      $span->set_status( SPAN_STATUS_OK );
-      $span->set_attribute( 'http.status_code' => $c->tx->res->code );
-    },
-  );
-};
 
 app->sql->migrations->name('test')->from_string(<<'EOF')->migrate;
 -- 1 up
