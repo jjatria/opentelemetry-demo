@@ -1622,41 +1622,41 @@ DISTRIBUTIONS
       XS::Parse::Sublike 0.15
       XS::Parse::Sublike::Builder 0.15
       perl 5.018
-  OpenTelemetry-0.013
-    pathname: J/JJ/JJATRIA/OpenTelemetry-0.013.tar.gz
+  OpenTelemetry-0.015
+    pathname: J/JJ/JJATRIA/OpenTelemetry-0.015.tar.gz
     provides:
-      OpenTelemetry 0.013
-      OpenTelemetry::Attributes 0.013
-      OpenTelemetry::Baggage 0.013
-      OpenTelemetry::Constants 0.013
-      OpenTelemetry::Context 0.013
-      OpenTelemetry::Exporter 0.013
-      OpenTelemetry::Integration 0.013
-      OpenTelemetry::Integration::DBI 0.013
-      OpenTelemetry::Integration::HTTP::Tiny 0.013
-      OpenTelemetry::Integration::LWP::UserAgent 0.013
-      OpenTelemetry::Propagator 0.013
-      OpenTelemetry::Propagator::Baggage 0.013
-      OpenTelemetry::Propagator::Composite 0.013
-      OpenTelemetry::Propagator::None 0.013
-      OpenTelemetry::Propagator::TextMap 0.013
-      OpenTelemetry::Propagator::TraceContext 0.013
-      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.013
-      OpenTelemetry::Propagator::TraceContext::TraceParent 0.013
-      OpenTelemetry::Propagator::TraceContext::TraceState 0.013
-      OpenTelemetry::Trace 0.013
-      OpenTelemetry::Trace::Event 0.013
-      OpenTelemetry::Trace::Link 0.013
-      OpenTelemetry::Trace::Span 0.013
-      OpenTelemetry::Trace::Span::Processor 0.013
-      OpenTelemetry::Trace::Span::Status 0.013
-      OpenTelemetry::Trace::SpanContext 0.013
-      OpenTelemetry::Trace::Tracer 0.013
-      OpenTelemetry::Trace::TracerProvider 0.013
-      OpenTelemetry::X 0.013
-      OpenTelemetry::X::Invalid 0.013
-      OpenTelemetry::X::Parsing 0.013
-      OpenTelemetry::X::Unsupported 0.013
+      OpenTelemetry 0.015
+      OpenTelemetry::Attributes 0.015
+      OpenTelemetry::Baggage 0.015
+      OpenTelemetry::Constants 0.015
+      OpenTelemetry::Context 0.015
+      OpenTelemetry::Exporter 0.015
+      OpenTelemetry::Integration 0.015
+      OpenTelemetry::Integration::DBI 0.015
+      OpenTelemetry::Integration::HTTP::Tiny 0.015
+      OpenTelemetry::Integration::LWP::UserAgent 0.015
+      OpenTelemetry::Propagator 0.015
+      OpenTelemetry::Propagator::Baggage 0.015
+      OpenTelemetry::Propagator::Composite 0.015
+      OpenTelemetry::Propagator::None 0.015
+      OpenTelemetry::Propagator::TextMap 0.015
+      OpenTelemetry::Propagator::TraceContext 0.015
+      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.015
+      OpenTelemetry::Propagator::TraceContext::TraceParent 0.015
+      OpenTelemetry::Propagator::TraceContext::TraceState 0.015
+      OpenTelemetry::Trace 0.015
+      OpenTelemetry::Trace::Event 0.015
+      OpenTelemetry::Trace::Link 0.015
+      OpenTelemetry::Trace::Span 0.015
+      OpenTelemetry::Trace::Span::Processor 0.015
+      OpenTelemetry::Trace::Span::Status 0.015
+      OpenTelemetry::Trace::SpanContext 0.015
+      OpenTelemetry::Trace::Tracer 0.015
+      OpenTelemetry::Trace::TracerProvider 0.015
+      OpenTelemetry::X 0.015
+      OpenTelemetry::X::Invalid 0.015
+      OpenTelemetry::X::Parsing 0.015
+      OpenTelemetry::X::Unsupported 0.015
     requirements:
       Bytes::Random::Secure 0
       Class::Method::Modifiers 0
@@ -1679,13 +1679,13 @@ DISTRIBUTIONS
       UUID::URandom 0
       X::Tiny 0
       perl v5.32.0
-  OpenTelemetry-Exporter-OTLP-0.010
-    pathname: J/JJ/JJATRIA/OpenTelemetry-Exporter-OTLP-0.010.tar.gz
+  OpenTelemetry-Exporter-OTLP-0.011
+    pathname: J/JJ/JJATRIA/OpenTelemetry-Exporter-OTLP-0.011.tar.gz
     provides:
-      OpenTelemetry::Exporter::OTLP 0.010
-      OpenTelemetry::Exporter::OTLP::Encoder::JSON 0.010
-      OpenTelemetry::Exporter::OTLP::Encoder::Protobuf 0.010
-      OpenTelemetry::Proto 0.010
+      OpenTelemetry::Exporter::OTLP 0.011
+      OpenTelemetry::Exporter::OTLP::Encoder::JSON 0.011
+      OpenTelemetry::Exporter::OTLP::Encoder::Protobuf 0.011
+      OpenTelemetry::Proto 0.011
     requirements:
       ExtUtils::MakeMaker 0
       Feature::Compat::Try 0
@@ -1700,26 +1700,26 @@ DISTRIBUTIONS
       Syntax::Keyword::Match 0
       Time::Piece 0
       perl 5.020000
-  OpenTelemetry-SDK-0.013
-    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.013.tar.gz
+  OpenTelemetry-SDK-0.014
+    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.014.tar.gz
     provides:
-      OpenTelemetry::SDK 0.013
-      OpenTelemetry::SDK::Exporter::Console 0.013
-      OpenTelemetry::SDK::InstrumentationScope 0.013
-      OpenTelemetry::SDK::Resource 0.013
-      OpenTelemetry::SDK::Trace::Sampler 0.013
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.013
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.013
-      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.013
-      OpenTelemetry::SDK::Trace::Sampler::Result 0.013
-      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.013
-      OpenTelemetry::SDK::Trace::Span 0.013
-      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.013
-      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.013
-      OpenTelemetry::SDK::Trace::Span::Readable 0.013
-      OpenTelemetry::SDK::Trace::SpanLimits 0.013
-      OpenTelemetry::SDK::Trace::Tracer 0.013
-      OpenTelemetry::SDK::Trace::TracerProvider 0.013
+      OpenTelemetry::SDK 0.014
+      OpenTelemetry::SDK::Exporter::Console 0.014
+      OpenTelemetry::SDK::InstrumentationScope 0.014
+      OpenTelemetry::SDK::Resource 0.014
+      OpenTelemetry::SDK::Trace::Sampler 0.014
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.014
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.014
+      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.014
+      OpenTelemetry::SDK::Trace::Sampler::Result 0.014
+      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.014
+      OpenTelemetry::SDK::Trace::Span 0.014
+      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.014
+      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.014
+      OpenTelemetry::SDK::Trace::Span::Readable 0.014
+      OpenTelemetry::SDK::Trace::SpanLimits 0.014
+      OpenTelemetry::SDK::Trace::Tracer 0.014
+      OpenTelemetry::SDK::Trace::TracerProvider 0.014
     requirements:
       Feature::Compat::Try 0
       Future 0.26
