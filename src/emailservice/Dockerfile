@@ -19,18 +19,18 @@ COPY ./src/emailservice/cpanfile ./src/emailservice/cpanfile.snapshot .
 
 RUN cpm install --global
 
-# # Uncomment following lines to install from submodules
-# # Install dev version of API
-# COPY ./src/emailservice/api/ /tmp/api/
-# RUN cpanm --verbose /tmp/api
-#
-# # Install dev version of SDK
-# COPY ./src/emailservice/sdk/ /tmp/sdk/
-# RUN cpanm --verbose /tmp/sdk
-#
-# # Install dev version of OTLP exporter
-# COPY ./src/emailservice/otlp/ /tmp/otlp/
-# RUN cpanm --verbose /tmp/otlp
+# Uncomment following lines to install from submodules
+# Install dev version of API
+COPY ./src/emailservice/api/ /tmp/api/
+RUN cpanm --verbose /tmp/api
+
+# Install dev version of SDK
+COPY ./src/emailservice/sdk/ /tmp/sdk/
+RUN cpanm --verbose /tmp/sdk
+
+# Install dev version of OTLP exporter
+COPY ./src/emailservice/otlp/ /tmp/otlp/
+RUN cpanm --verbose /tmp/otlp
 
 RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
 

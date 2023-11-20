@@ -48,6 +48,8 @@ post '/send_order_confirmation' => sub ($c) {
     order    => $data->{order} ,
   );
 
+  $span->add_event( name => 'template rendered' );
+
   send_email(
     to        => $data->{email},
     html_body => $body,
@@ -55,7 +57,7 @@ post '/send_order_confirmation' => sub ($c) {
 
   # To test HTTP::Tiny integration
   my $res = HTTP::Tiny->new->get('http://httpbin/anything');
-  app->log->trace('Call was ' . $res->{status});
+  app->log->debug('Call was ' . $res->{status});
 
   $c->rendered(200);
 };
@@ -74,7 +76,10 @@ sub send_email (%args) {
   $tracer->in_span( send_email => sub ($span, $context) {
     Email::Stuffer->new($data)->send;
 
-    $span->set_attribute( 'app.email.recipient' => $data->{to} );
+    $span
+        ->add_event( name => 'email sent' )
+        ->set_attribute( 'app.email.recipient' => $data->{to} );
+
     app->log->info("Order confirmation email sent to: $data->{to}");
 
     # To test SQL integration
@@ -87,19 +92,17 @@ sub send_email (%args) {
         app->log->trace("$data->{to} is a known email");
     }
     else {
-        app->log->trace("$data->{to} is a new email");
+        app->log->warn("$data->{to} is a new email");
         app->sql->db
           ->insert( known_emails => { email => $data->{to} } )
           ->last_insert_id;
     }
-
-    $span->set_status( SPAN_STATUS_OK );
   });
 
   # Manually created spans need to be ended
   # In Perl, the method `in_span` ends them automatically
-  # Check out the OpenTelemetry Perl docs at (NYI):
-  # https://opentelemetry.io/docs/instrumentation/perl/manual/#creating-new-spans
+  # Check out the OpenTelemetry Perl docs at:
+  # https://metacpan.org/dist/OpenTelemetry/view/lib/OpenTelemetry/Trace/Tracer.pod#create_span
 }
 
 app->start;
