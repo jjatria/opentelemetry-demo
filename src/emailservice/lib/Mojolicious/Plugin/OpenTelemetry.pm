@@ -8,6 +8,9 @@ use OpenTelemetry -all;
 use OpenTelemetry::Constants -span;
 use Syntax::Keyword::Dynamically;
 
+use Log::Any;
+my $logger = Log::Any->get_logger( category => 'OpenTelemetry' );
+
 sub register ( $, $app, $config ) {
     $config->{tracer}{name} //= otel_config('SERVICE_NAME') // $app->moniker;
 
@@ -63,6 +66,13 @@ sub register ( $, $app, $config ) {
                     ->set_attribute( 'http.status_code' => $c->tx->res->code );
             },
         );
+    });
+
+    # TODO: Send Mojo::Log output to Log::Any. Should this be
+    # its own separate distribution? Like, an actually working version
+    # of the spirit of the failed MojoX::Log::Any
+    $app->log->on( message => sub ( $, $level, @lines ) {
+        $logger->$level( join ' ', @lines );
     });
 }
 

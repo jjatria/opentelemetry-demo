@@ -19,20 +19,20 @@ COPY cpanfile cpanfile.snapshot .
 
 RUN cpm install --global
 
-# # Uncomment following lines to install from submodules
-# # Install dev version of API
-# COPY ./api/ /tmp/api/
-# RUN cpanm --verbose /tmp/api
-#
-# # Install dev version of SDK
-# COPY ./sdk/ /tmp/sdk/
-# RUN cpanm --verbose /tmp/sdk
-#
+# Uncomment following lines to install from submodules
+# Install dev version of API
+COPY ./api/ /tmp/api/
+RUN cpanm --verbose /tmp/api
+
+# Install dev version of SDK
+COPY ./sdk/ /tmp/sdk/
+RUN cpanm --verbose /tmp/sdk
+
 # Install dev version of OTLP exporter
-# COPY ./otlp/ /tmp/otlp/
-# RUN cpanm --verbose /tmp/otlp
-#
-# RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
+COPY ./otlp/ /tmp/otlp/
+RUN cpanm --verbose /tmp/otlp
+
+RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
 
 FROM builder as release
 

@@ -4,26 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 
 use Mojolicious::Lite -signatures;
-use Log::Any::Adapter 'MojoLog';
+
 use Metrics::Any::Adapter 'Stderr';
-
-use experimental qw( isa try );
-
+use Log::Any::Adapter 'OpenTelemetry';
 use OpenTelemetry;
-use OpenTelemetry::Constants qw(
-    SPAN_KIND_SERVER
-    SPAN_STATUS_ERROR
-    SPAN_STATUS_OK
-);
-use OpenTelemetry::Context;
 use OpenTelemetry::SDK;
+use OpenTelemetry::Constants -span;
 use Syntax::Keyword::Dynamically;
 use OpenTelemetry::Integration qw( DBI HTTP::Tiny );
 use Email::Stuffer;
-
 use Mojo::SQLite;
 use HTTP::Tiny;
 
+use experimental qw( isa try );
 use lib 'lib';
 
 plugin 'OpenTelemetry';
@@ -41,16 +34,16 @@ post '/send_order_confirmation' => sub ($c) {
   my $data = $c->req->json;
 
   # Get the current auto-instrumented span
-  my $span = OpenTelemetry::Trace->span_from_context;
-
-  $span->set_attribute(
-    'app.order.id' => $data->{order}{order_id},
-  );
+  my $span = OpenTelemetry::Trace
+        ->span_from_context
+        ->set_attribute( 'app.order.id' => $data->{order}{order_id} );
 
   my $body = $c->render_to_string(
     template => 'confirmation',
     order    => $data->{order} ,
   );
+
+  $span->add_event( name => 'template rendered' );
 
   send_email(
     to        => $data->{email},
@@ -58,7 +51,7 @@ post '/send_order_confirmation' => sub ($c) {
   );
 
   my $res = HTTP::Tiny->new->get('http://httpbin/anything');
-  app->log->trace('Call was ' . $res->{status});
+  app->log->debug('Call was ' . $res->{status});
 
   $c->rendered(200);
 };
@@ -77,7 +70,10 @@ sub send_email (%args) {
   $tracer->in_span( send_email => sub ($span, $context) {
     Email::Stuffer->new($data)->send;
 
-    $span->set_attribute( 'app.email.recipient' => $data->{to} );
+    $span
+        ->add_event( name => 'email sent' )
+        ->set_attribute( 'app.email.recipient' => $data->{to} );
+
     app->log->info("Order confirmation email sent to: $data->{to}");
 
     my $seen = app->sql->db
@@ -89,19 +85,17 @@ sub send_email (%args) {
         app->log->trace("$data->{to} is a known email");
     }
     else {
-        app->log->trace("$data->{to} is a new email");
+        app->log->warn("$data->{to} is a new email");
         app->sql->db
           ->insert( known_emails => { email => $data->{to} } )
           ->last_insert_id;
     }
-
-    $span->set_status( SPAN_STATUS_OK );
   });
 
   # Manually created spans need to be ended
   # In Perl, the method `in_span` ends them automatically
-  # Check out the OpenTelemetry Perl docs at (NYI):
-  # https://opentelemetry.io/docs/instrumentation/perl/manual/#creating-new-spans
+  # Check out the OpenTelemetry Perl docs at:
+  # https://metacpan.org/dist/OpenTelemetry/view/lib/OpenTelemetry/Trace/Tracer.pod#create_span
 }
 
 app->start;
