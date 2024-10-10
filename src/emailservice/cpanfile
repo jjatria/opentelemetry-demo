@@ -3,9 +3,10 @@ requires 'IO::Async';
 requires 'IO::Async::Loop::Mojo';
 requires 'Log::Any::Adapter::MojoLog';
 requires 'Mojolicious';
+requires 'Mojolicious::Plugin::OpenTelemetry';
 requires 'OpenTelemetry';
-requires 'OpenTelemetry::SDK';
 requires 'OpenTelemetry::Exporter::OTLP';
+requires 'OpenTelemetry::SDK';
 
 # Optional dependencies, for additional features
 requires 'Compress::Zlib';
