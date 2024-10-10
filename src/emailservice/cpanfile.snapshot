@@ -36,88 +36,88 @@ DISTRIBUTIONS
       URI 0
       parent 0
       perl 5.008001
-  Alien-Build-2.80
-    pathname: P/PL/PLICEASE/Alien-Build-2.80.tar.gz
+  Alien-Build-2.83
+    pathname: P/PL/PLICEASE/Alien-Build-2.83.tar.gz
     provides:
-      Alien::Base 2.80
-      Alien::Base::PkgConfig 2.80
-      Alien::Base::Wrapper 2.80
-      Alien::Build 2.80
-      Alien::Build::CommandSequence 2.80
-      Alien::Build::Helper 2.80
-      Alien::Build::Interpolate 2.80
-      Alien::Build::Interpolate::Default 2.80
-      Alien::Build::Interpolate::Helper 2.80
-      Alien::Build::Log 2.80
-      Alien::Build::Log::Abbreviate 2.80
-      Alien::Build::Log::Default 2.80
-      Alien::Build::MM 2.80
-      Alien::Build::Meta 2.80
-      Alien::Build::Plugin 2.80
-      Alien::Build::Plugin::Build::Autoconf 2.80
-      Alien::Build::Plugin::Build::CMake 2.80
-      Alien::Build::Plugin::Build::Copy 2.80
-      Alien::Build::Plugin::Build::MSYS 2.80
-      Alien::Build::Plugin::Build::Make 2.80
-      Alien::Build::Plugin::Build::SearchDep 2.80
-      Alien::Build::Plugin::Core::CleanInstall 2.80
-      Alien::Build::Plugin::Core::Download 2.80
-      Alien::Build::Plugin::Core::FFI 2.80
-      Alien::Build::Plugin::Core::Gather 2.80
-      Alien::Build::Plugin::Core::Legacy 2.80
-      Alien::Build::Plugin::Core::Override 2.80
-      Alien::Build::Plugin::Core::Setup 2.80
-      Alien::Build::Plugin::Core::Tail 2.80
-      Alien::Build::Plugin::Decode::DirListing 2.80
-      Alien::Build::Plugin::Decode::DirListingFtpcopy 2.80
-      Alien::Build::Plugin::Decode::HTML 2.80
-      Alien::Build::Plugin::Decode::Mojo 2.80
-      Alien::Build::Plugin::Digest::Negotiate 2.80
-      Alien::Build::Plugin::Digest::SHA 2.80
-      Alien::Build::Plugin::Digest::SHAPP 2.80
-      Alien::Build::Plugin::Download::Negotiate 2.80
-      Alien::Build::Plugin::Extract::ArchiveTar 2.80
-      Alien::Build::Plugin::Extract::ArchiveZip 2.80
-      Alien::Build::Plugin::Extract::CommandLine 2.80
-      Alien::Build::Plugin::Extract::Directory 2.80
-      Alien::Build::Plugin::Extract::File 2.80
-      Alien::Build::Plugin::Extract::Negotiate 2.80
-      Alien::Build::Plugin::Fetch::CurlCommand 2.80
-      Alien::Build::Plugin::Fetch::HTTPTiny 2.80
-      Alien::Build::Plugin::Fetch::LWP 2.80
-      Alien::Build::Plugin::Fetch::Local 2.80
-      Alien::Build::Plugin::Fetch::LocalDir 2.80
-      Alien::Build::Plugin::Fetch::NetFTP 2.80
-      Alien::Build::Plugin::Fetch::Wget 2.80
-      Alien::Build::Plugin::Gather::IsolateDynamic 2.80
-      Alien::Build::Plugin::PkgConfig::CommandLine 2.80
-      Alien::Build::Plugin::PkgConfig::LibPkgConf 2.80
-      Alien::Build::Plugin::PkgConfig::MakeStatic 2.80
-      Alien::Build::Plugin::PkgConfig::Negotiate 2.80
-      Alien::Build::Plugin::PkgConfig::PP 2.80
-      Alien::Build::Plugin::Prefer::BadVersion 2.80
-      Alien::Build::Plugin::Prefer::GoodVersion 2.80
-      Alien::Build::Plugin::Prefer::SortVersions 2.80
-      Alien::Build::Plugin::Probe::CBuilder 2.80
-      Alien::Build::Plugin::Probe::CommandLine 2.80
-      Alien::Build::Plugin::Probe::Vcpkg 2.80
-      Alien::Build::Plugin::Test::Mock 2.80
-      Alien::Build::PluginMeta 2.80
-      Alien::Build::Temp 2.80
-      Alien::Build::TempDir 2.80
-      Alien::Build::Util 2.80
-      Alien::Build::Version::Basic 2.80
-      Alien::Build::rc 2.80
-      Alien::Role 2.80
-      Alien::Util 2.80
-      Test::Alien 2.80
-      Test::Alien::Build 2.80
-      Test::Alien::CanCompile 2.80
-      Test::Alien::CanPlatypus 2.80
-      Test::Alien::Diag 2.80
-      Test::Alien::Run 2.80
-      Test::Alien::Synthetic 2.80
-      alienfile 2.80
+      Alien::Base 2.83
+      Alien::Base::PkgConfig 2.83
+      Alien::Base::Wrapper 2.83
+      Alien::Build 2.83
+      Alien::Build::CommandSequence 2.83
+      Alien::Build::Helper 2.83
+      Alien::Build::Interpolate 2.83
+      Alien::Build::Interpolate::Default 2.83
+      Alien::Build::Interpolate::Helper 2.83
+      Alien::Build::Log 2.83
+      Alien::Build::Log::Abbreviate 2.83
+      Alien::Build::Log::Default 2.83
+      Alien::Build::MM 2.83
+      Alien::Build::Meta 2.83
+      Alien::Build::Plugin 2.83
+      Alien::Build::Plugin::Build::Autoconf 2.83
+      Alien::Build::Plugin::Build::CMake 2.83
+      Alien::Build::Plugin::Build::Copy 2.83
+      Alien::Build::Plugin::Build::MSYS 2.83
+      Alien::Build::Plugin::Build::Make 2.83
+      Alien::Build::Plugin::Build::SearchDep 2.83
+      Alien::Build::Plugin::Core::CleanInstall 2.83
+      Alien::Build::Plugin::Core::Download 2.83
+      Alien::Build::Plugin::Core::FFI 2.83
+      Alien::Build::Plugin::Core::Gather 2.83
+      Alien::Build::Plugin::Core::Legacy 2.83
+      Alien::Build::Plugin::Core::Override 2.83
+      Alien::Build::Plugin::Core::Setup 2.83
+      Alien::Build::Plugin::Core::Tail 2.83
+      Alien::Build::Plugin::Decode::DirListing 2.83
+      Alien::Build::Plugin::Decode::DirListingFtpcopy 2.83
+      Alien::Build::Plugin::Decode::HTML 2.83
+      Alien::Build::Plugin::Decode::Mojo 2.83
+      Alien::Build::Plugin::Digest::Negotiate 2.83
+      Alien::Build::Plugin::Digest::SHA 2.83
+      Alien::Build::Plugin::Digest::SHAPP 2.83
+      Alien::Build::Plugin::Download::Negotiate 2.83
+      Alien::Build::Plugin::Extract::ArchiveTar 2.83
+      Alien::Build::Plugin::Extract::ArchiveZip 2.83
+      Alien::Build::Plugin::Extract::CommandLine 2.83
+      Alien::Build::Plugin::Extract::Directory 2.83
+      Alien::Build::Plugin::Extract::File 2.83
+      Alien::Build::Plugin::Extract::Negotiate 2.83
+      Alien::Build::Plugin::Fetch::CurlCommand 2.83
+      Alien::Build::Plugin::Fetch::HTTPTiny 2.83
+      Alien::Build::Plugin::Fetch::LWP 2.83
+      Alien::Build::Plugin::Fetch::Local 2.83
+      Alien::Build::Plugin::Fetch::LocalDir 2.83
+      Alien::Build::Plugin::Fetch::NetFTP 2.83
+      Alien::Build::Plugin::Fetch::Wget 2.83
+      Alien::Build::Plugin::Gather::IsolateDynamic 2.83
+      Alien::Build::Plugin::PkgConfig::CommandLine 2.83
+      Alien::Build::Plugin::PkgConfig::LibPkgConf 2.83
+      Alien::Build::Plugin::PkgConfig::MakeStatic 2.83
+      Alien::Build::Plugin::PkgConfig::Negotiate 2.83
+      Alien::Build::Plugin::PkgConfig::PP 2.83
+      Alien::Build::Plugin::Prefer::BadVersion 2.83
+      Alien::Build::Plugin::Prefer::GoodVersion 2.83
+      Alien::Build::Plugin::Prefer::SortVersions 2.83
+      Alien::Build::Plugin::Probe::CBuilder 2.83
+      Alien::Build::Plugin::Probe::CommandLine 2.83
+      Alien::Build::Plugin::Probe::Vcpkg 2.83
+      Alien::Build::Plugin::Test::Mock 2.83
+      Alien::Build::PluginMeta 2.83
+      Alien::Build::Temp 2.83
+      Alien::Build::TempDir 2.83
+      Alien::Build::Util 2.83
+      Alien::Build::Version::Basic 2.83
+      Alien::Build::rc 2.83
+      Alien::Role 2.83
+      Alien::Util 2.83
+      Test::Alien 2.83
+      Test::Alien::Build 2.83
+      Test::Alien::CanCompile 2.83
+      Test::Alien::CanPlatypus 2.83
+      Test::Alien::Diag 2.83
+      Test::Alien::Run 2.83
+      Test::Alien::Synthetic 2.83
+      alienfile 2.83
     requirements:
       Capture::Tiny 0.17
       Digest::SHA 0
@@ -213,24 +213,6 @@ DISTRIBUTIONS
       IO::Seekable 0
       Time::Local 0
       perl 5.006
-  B-Hooks-EndOfScope-0.26
-    pathname: E/ET/ETHER/B-Hooks-EndOfScope-0.26.tar.gz
-    provides:
-      B::Hooks::EndOfScope 0.26
-      B::Hooks::EndOfScope::PP 0.26
-      B::Hooks::EndOfScope::XS 0.26
-    requirements:
-      ExtUtils::MakeMaker 0
-      Hash::Util::FieldHash 0
-      Module::Implementation 0.05
-      Scalar::Util 0
-      Sub::Exporter::Progressive 0.001006
-      Text::ParseWords 0
-      Tie::Hash 0
-      Variable::Magic 0.48
-      perl 5.006001
-      strict 0
-      warnings 0
   Bytes-Random-Secure-0.29
     pathname: D/DA/DAVIDO/Bytes-Random-Secure-0.29.tar.gz
     provides:
@@ -283,12 +265,6 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Clone-0.46
-    pathname: G/GA/GARU/Clone-0.46.tar.gz
-    provides:
-      Clone 0.46
-    requirements:
-      ExtUtils::MakeMaker 0
   Clone-Choose-0.010
     pathname: H/HE/HERMES/Clone-Choose-0.010.tar.gz
     provides:
@@ -297,10 +273,10 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Storable 0
       perl 5.008001
-  Cpanel-JSON-XS-4.37
-    pathname: R/RU/RURBAN/Cpanel-JSON-XS-4.37.tar.gz
+  Cpanel-JSON-XS-4.38
+    pathname: R/RU/RURBAN/Cpanel-JSON-XS-4.38.tar.gz
     provides:
-      Cpanel::JSON::XS 4.37
+      Cpanel::JSON::XS 4.38
       Cpanel::JSON::XS::Type undef
     requirements:
       Carp 0
@@ -341,25 +317,26 @@ DISTRIBUTIONS
       Time::HiRes 1.9711
       base 0
       perl 5.006002
-  Crypt-URandom-0.39
-    pathname: D/DD/DDICK/Crypt-URandom-0.39.tar.gz
+  Crypt-URandom-0.40
+    pathname: D/DD/DDICK/Crypt-URandom-0.40.tar.gz
     provides:
-      Crypt::URandom 0.39
+      Crypt::URandom 0.40
     requirements:
       Carp 0
       English 0
       Exporter 0
       ExtUtils::MakeMaker 0
       FileHandle 0
+      constant 0
       perl 5.006
-  DBD-SQLite-1.72
-    pathname: I/IS/ISHIGAKI/DBD-SQLite-1.72.tar.gz
+  DBD-SQLite-1.74
+    pathname: I/IS/ISHIGAKI/DBD-SQLite-1.74.tar.gz
     provides:
-      DBD::SQLite 1.72
+      DBD::SQLite 1.74
       DBD::SQLite::Constants undef
       DBD::SQLite::GetInfo undef
-      DBD::SQLite::VirtualTable 1.72
-      DBD::SQLite::VirtualTable::Cursor 1.72
+      DBD::SQLite::VirtualTable 1.74
+      DBD::SQLite::VirtualTable::Cursor 1.74
       DBD::SQLite::VirtualTable::FileContent undef
       DBD::SQLite::VirtualTable::FileContent::Cursor undef
       DBD::SQLite::VirtualTable::PerlData undef
@@ -371,8 +348,8 @@ DISTRIBUTIONS
       Test::More 0.88
       Tie::Hash 0
       perl 5.006
-  DBI-1.643
-    pathname: T/TI/TIMB/DBI-1.643.tar.gz
+  DBI-1.645
+    pathname: H/HM/HMBRAND/DBI-1.645.tgz
     provides:
       Bundle::DBI 12.008696
       DBD::DBM 0.08
@@ -428,7 +405,7 @@ DISTRIBUTIONS
       DBD::Sponge::dr 12.010003
       DBD::Sponge::st 12.010003
       DBDI 12.015129
-      DBI 1.643
+      DBI 1.645
       DBI::Const::GetInfo::ANSI 2.008697
       DBI::Const::GetInfo::ODBC 2.011374
       DBI::Const::GetInfoReturn 2.008697
@@ -468,7 +445,7 @@ DISTRIBUTIONS
       DBI::SQL::Nano::Table_ 1.015544
       DBI::Util::CacheMemory 0.010315
       DBI::Util::_accessor 0.009479
-      DBI::common 1.643
+      DBI::common 1.645
     requirements:
       ExtUtils::MakeMaker 6.48
       Test::Simple 0.90
@@ -485,11 +462,11 @@ DISTRIBUTIONS
       perl 5.012
       strict 0
       warnings 0
-  Devel-StackTrace-2.04
-    pathname: D/DR/DROLSKY/Devel-StackTrace-2.04.tar.gz
+  Devel-StackTrace-2.05
+    pathname: D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz
     provides:
-      Devel::StackTrace 2.04
-      Devel::StackTrace::Frame 2.04
+      Devel::StackTrace 2.05
+      Devel::StackTrace::Frame 2.05
     requirements:
       ExtUtils::MakeMaker 0
       File::Spec 0
@@ -498,28 +475,16 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Dist-CheckConflicts-0.11
-    pathname: D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
+  Email-Abstract-3.010
+    pathname: R/RJ/RJBS/Email-Abstract-3.010.tar.gz
     provides:
-      Dist::CheckConflicts 0.11
-    requirements:
-      Carp 0
-      Exporter 0
-      ExtUtils::MakeMaker 6.30
-      Module::Runtime 0.009
-      base 0
-      strict 0
-      warnings 0
-  Email-Abstract-3.009
-    pathname: R/RJ/RJBS/Email-Abstract-3.009.tar.gz
-    provides:
-      Email::Abstract 3.009
-      Email::Abstract::EmailMIME 3.009
-      Email::Abstract::EmailSimple 3.009
-      Email::Abstract::MIMEEntity 3.009
-      Email::Abstract::MailInternet 3.009
-      Email::Abstract::MailMessage 3.009
-      Email::Abstract::Plugin 3.009
+      Email::Abstract 3.010
+      Email::Abstract::EmailMIME 3.010
+      Email::Abstract::EmailSimple 3.010
+      Email::Abstract::MIMEEntity 3.010
+      Email::Abstract::MailInternet 3.010
+      Email::Abstract::MailMessage 3.010
+      Email::Abstract::Plugin 3.010
     requirements:
       Carp 0
       Email::Simple 1.998
@@ -554,15 +519,15 @@ DISTRIBUTIONS
       Time::Local 1.27
       perl 5.012
       warnings 0
-  Email-MIME-1.953
-    pathname: R/RJ/RJBS/Email-MIME-1.953.tar.gz
+  Email-MIME-1.954
+    pathname: R/RJ/RJBS/Email-MIME-1.954.tar.gz
     provides:
-      Email::MIME 1.953
-      Email::MIME::Creator 1.953
-      Email::MIME::Encode 1.953
-      Email::MIME::Header 1.953
-      Email::MIME::Header::AddressList 1.953
-      Email::MIME::Modifier 1.953
+      Email::MIME 1.954
+      Email::MIME::Creator 1.954
+      Email::MIME::Encode 1.954
+      Email::MIME::Header 1.954
+      Email::MIME::Header::AddressList 1.954
+      Email::MIME::Modifier 1.954
     requirements:
       Carp 0
       Email::Address::XS 0
@@ -617,33 +582,33 @@ DISTRIBUTIONS
       perl 5.012
       strict 0
       warnings 0
-  Email-Sender-2.600
-    pathname: R/RJ/RJBS/Email-Sender-2.600.tar.gz
+  Email-Sender-2.601
+    pathname: R/RJ/RJBS/Email-Sender-2.601.tar.gz
     provides:
-      Email::Sender 2.600
-      Email::Sender::Failure 2.600
-      Email::Sender::Failure::Multi 2.600
-      Email::Sender::Failure::Permanent 2.600
-      Email::Sender::Failure::Temporary 2.600
-      Email::Sender::Manual 2.600
-      Email::Sender::Manual::QuickStart 2.600
-      Email::Sender::Role::CommonSending 2.600
-      Email::Sender::Role::HasMessage 2.600
-      Email::Sender::Simple 2.600
-      Email::Sender::Success 2.600
-      Email::Sender::Success::Partial 2.600
-      Email::Sender::Transport 2.600
-      Email::Sender::Transport::DevNull 2.600
-      Email::Sender::Transport::Failable 2.600
-      Email::Sender::Transport::Maildir 2.600
-      Email::Sender::Transport::Mbox 2.600
-      Email::Sender::Transport::Print 2.600
-      Email::Sender::Transport::SMTP 2.600
-      Email::Sender::Transport::SMTP::Persistent 2.600
-      Email::Sender::Transport::Sendmail 2.600
-      Email::Sender::Transport::Test 2.600
-      Email::Sender::Transport::Wrapper 2.600
-      Email::Sender::Util 2.600
+      Email::Sender 2.601
+      Email::Sender::Failure 2.601
+      Email::Sender::Failure::Multi 2.601
+      Email::Sender::Failure::Permanent 2.601
+      Email::Sender::Failure::Temporary 2.601
+      Email::Sender::Manual 2.601
+      Email::Sender::Manual::QuickStart 2.601
+      Email::Sender::Role::CommonSending 2.601
+      Email::Sender::Role::HasMessage 2.601
+      Email::Sender::Simple 2.601
+      Email::Sender::Success 2.601
+      Email::Sender::Success::Partial 2.601
+      Email::Sender::Transport 2.601
+      Email::Sender::Transport::DevNull 2.601
+      Email::Sender::Transport::Failable 2.601
+      Email::Sender::Transport::Maildir 2.601
+      Email::Sender::Transport::Mbox 2.601
+      Email::Sender::Transport::Print 2.601
+      Email::Sender::Transport::SMTP 2.601
+      Email::Sender::Transport::SMTP::Persistent 2.601
+      Email::Sender::Transport::Sendmail 2.601
+      Email::Sender::Transport::Test 2.601
+      Email::Sender::Transport::Wrapper 2.601
+      Email::Sender::Util 2.601
     requirements:
       Carp 0
       Email::Abstract 3.006
@@ -702,15 +667,6 @@ DISTRIBUTIONS
       Scalar::Util 0
       perl 5.012
       warnings 0
-  Encode-Locale-1.05
-    pathname: G/GA/GAAS/Encode-Locale-1.05.tar.gz
-    provides:
-      Encode::Locale 1.05
-    requirements:
-      Encode 2
-      Encode::Alias 0
-      ExtUtils::MakeMaker 0
-      perl 5.008
   Exporter-Tiny-1.006002
     pathname: T/TO/TOBYINK/Exporter-Tiny-1.006002.tar.gz
     provides:
@@ -719,26 +675,30 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 6.17
       perl 5.006001
-  ExtUtils-CChecker-0.11
-    pathname: P/PE/PEVANS/ExtUtils-CChecker-0.11.tar.gz
+  ExtUtils-CChecker-0.12
+    pathname: P/PE/PEVANS/ExtUtils-CChecker-0.12.tar.gz
     provides:
-      ExtUtils::CChecker 0.11
+      ExtUtils::CChecker 0.12
     requirements:
       ExtUtils::CBuilder 0
       Module::Build 0.4004
-  ExtUtils-Config-0.008
-    pathname: L/LE/LEONT/ExtUtils-Config-0.008.tar.gz
+      perl 5.014
+  ExtUtils-Config-0.010
+    pathname: L/LE/LEONT/ExtUtils-Config-0.010.tar.gz
     provides:
-      ExtUtils::Config 0.008
+      ExtUtils::Config 0.010
+      ExtUtils::Config::MakeMaker 0.010
     requirements:
       Data::Dumper 0
-      ExtUtils::MakeMaker 6.30
+      ExtUtils::MakeMaker 0
+      ExtUtils::MakeMaker::Config 0
+      perl 5.006
       strict 0
       warnings 0
-  ExtUtils-CppGuess-0.26
-    pathname: E/ET/ETJ/ExtUtils-CppGuess-0.26.tar.gz
+  ExtUtils-CppGuess-0.27
+    pathname: E/ET/ETJ/ExtUtils-CppGuess-0.27.tar.gz
     provides:
-      ExtUtils::CppGuess 0.26
+      ExtUtils::CppGuess 0.27
     requirements:
       Capture::Tiny 0
       ExtUtils::MakeMaker 0
@@ -746,13 +706,13 @@ DISTRIBUTIONS
       File::Basename 0
       File::Spec 0
       File::Temp 0
-  ExtUtils-Helpers-0.026
-    pathname: L/LE/LEONT/ExtUtils-Helpers-0.026.tar.gz
+  ExtUtils-Helpers-0.028
+    pathname: L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz
     provides:
-      ExtUtils::Helpers 0.026
-      ExtUtils::Helpers::Unix 0.026
-      ExtUtils::Helpers::VMS 0.026
-      ExtUtils::Helpers::Windows 0.026
+      ExtUtils::Helpers 0.028
+      ExtUtils::Helpers::Unix 0.028
+      ExtUtils::Helpers::VMS 0.028
+      ExtUtils::Helpers::Windows 0.028
     requirements:
       Carp 0
       Exporter 5.57
@@ -761,19 +721,18 @@ DISTRIBUTIONS
       File::Copy 0
       File::Spec::Functions 0
       Text::ParseWords 3.24
-      perl 5.006
       strict 0
       warnings 0
-  ExtUtils-InstallPaths-0.012
-    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.012.tar.gz
+  ExtUtils-InstallPaths-0.014
+    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.014.tar.gz
     provides:
-      ExtUtils::InstallPaths 0.012
+      ExtUtils::InstallPaths 0.014
     requirements:
       Carp 0
-      ExtUtils::Config 0.002
+      ExtUtils::Config 0.009
       ExtUtils::MakeMaker 0
       File::Spec 0
-      perl 5.006
+      perl 5.008
       strict 0
       warnings 0
   ExtUtils-Typemaps-Default-1.05
@@ -940,26 +899,27 @@ DISTRIBUTIONS
       Test::Builder::Module 0
       Time::HiRes 0
       perl 5.010
-  Future-AsyncAwait-0.65
-    pathname: P/PE/PEVANS/Future-AsyncAwait-0.65.tar.gz
+  Future-AsyncAwait-0.69
+    pathname: P/PE/PEVANS/Future-AsyncAwait-0.69.tar.gz
     provides:
-      Future::AsyncAwait 0.65
-      Future::AsyncAwait::Awaitable 0.65
-      Future::AsyncAwait::ExtensionBuilder 0.65
-      Test::Future::AsyncAwait::Awaitable 0.65
+      Future::AsyncAwait 0.69
+      Future::AsyncAwait::Awaitable 0.69
+      Future::AsyncAwait::ExtensionBuilder 0.69
+      Test::Future::AsyncAwait::Awaitable 0.69
     requirements:
       ExtUtils::CBuilder 0
+      File::ShareDir 1.00
       Future 0.50
       Module::Build 0.4004
       XS::Parse::Keyword 0.13
       XS::Parse::Keyword::Builder 0.13
-      XS::Parse::Sublike 0.14
-      XS::Parse::Sublike::Builder 0.14
+      XS::Parse::Sublike 0.24
+      XS::Parse::Sublike::Builder 0.24
       perl 5.016
-  Google-ProtocolBuffers-Dynamic-0.42
-    pathname: M/MB/MBARBON/Google-ProtocolBuffers-Dynamic-0.42.tar.gz
+  Google-ProtocolBuffers-Dynamic-0.43
+    pathname: M/MB/MBARBON/Google-ProtocolBuffers-Dynamic-0.43.tar.gz
     provides:
-      Google::ProtocolBuffers::Dynamic 0.42
+      Google::ProtocolBuffers::Dynamic 0.43
       Google::ProtocolBuffers::Dynamic::AddPragma undef
       Google::ProtocolBuffers::Dynamic::MakeModule undef
       Google::ProtocolBuffers::Dynamic::ProtocInterface undef
@@ -967,7 +927,7 @@ DISTRIBUTIONS
     requirements:
       Alien::ProtoBuf 0.08
       Alien::uPB::Core 0.20
-      ExtUtils::CppGuess 0.26
+      ExtUtils::CppGuess 0.27
       ExtUtils::ParseXS 2.30
       ExtUtils::Typemaps::Default 1.05
       ExtUtils::Typemaps::STL::String 0
@@ -976,70 +936,6 @@ DISTRIBUTIONS
       Module::Build::WithXSpp 0.14
       autodie 0
       perl 5.008
-  HTTP-Cookies-6.10
-    pathname: O/OA/OALDERS/HTTP-Cookies-6.10.tar.gz
-    provides:
-      HTTP::Cookies 6.10
-      HTTP::Cookies::Microsoft 6.10
-      HTTP::Cookies::Netscape 6.10
-    requirements:
-      Carp 0
-      ExtUtils::MakeMaker 0
-      HTTP::Date 6
-      HTTP::Headers::Util 6
-      HTTP::Request 0
-      locale 0
-      perl 5.008001
-      strict 0
-  HTTP-Date-6.06
-    pathname: O/OA/OALDERS/HTTP-Date-6.06.tar.gz
-    provides:
-      HTTP::Date 6.06
-    requirements:
-      Exporter 0
-      ExtUtils::MakeMaker 0
-      Time::Local 1.28
-      Time::Zone 0
-      perl 5.006002
-      strict 0
-  HTTP-Message-6.44
-    pathname: O/OA/OALDERS/HTTP-Message-6.44.tar.gz
-    provides:
-      HTTP::Config 6.44
-      HTTP::Headers 6.44
-      HTTP::Headers::Auth 6.44
-      HTTP::Headers::ETag 6.44
-      HTTP::Headers::Util 6.44
-      HTTP::Message 6.44
-      HTTP::Request 6.44
-      HTTP::Request::Common 6.44
-      HTTP::Response 6.44
-      HTTP::Status 6.44
-    requirements:
-      Carp 0
-      Clone 0.46
-      Compress::Raw::Bzip2 0
-      Compress::Raw::Zlib 2.062
-      Encode 3.01
-      Encode::Locale 1
-      Exporter 5.57
-      ExtUtils::MakeMaker 0
-      File::Spec 0
-      HTTP::Date 6
-      IO::Compress::Bzip2 2.021
-      IO::Compress::Deflate 0
-      IO::Compress::Gzip 0
-      IO::HTML 0
-      IO::Uncompress::Inflate 0
-      IO::Uncompress::RawInflate 0
-      LWP::MediaTypes 6
-      MIME::Base64 2.1
-      MIME::QuotedPrint 0
-      URI 1.10
-      parent 0
-      perl 5.008001
-      strict 0
-      warnings 0
   Hash-Merge-0.302
     pathname: H/HE/HERMES/Hash-Merge-0.302.tar.gz
     provides:
@@ -1049,50 +945,50 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 6.64
       Scalar::Util 0
       perl 5.008001
-  IO-Async-0.802
-    pathname: P/PE/PEVANS/IO-Async-0.802.tar.gz
+  IO-Async-0.803
+    pathname: P/PE/PEVANS/IO-Async-0.803.tar.gz
     provides:
-      Future::IO::Impl::IOAsync undef
-      IO::Async 0.802
-      IO::Async::Channel 0.802
-      IO::Async::Debug 0.802
-      IO::Async::File 0.802
-      IO::Async::FileStream 0.802
-      IO::Async::Function 0.802
-      IO::Async::Future 0.802
-      IO::Async::Handle 0.802
-      IO::Async::Internals::ChildManager 0.802
-      IO::Async::Internals::FunctionWorker 0.802
-      IO::Async::Listener 0.802
-      IO::Async::Loop 0.802
-      IO::Async::Loop::Poll 0.802
-      IO::Async::Loop::Select 0.802
-      IO::Async::LoopTests 0.802
-      IO::Async::Metrics undef
-      IO::Async::Notifier 0.802
-      IO::Async::OS 0.802
-      IO::Async::OS::MSWin32 0.802
-      IO::Async::OS::cygwin 0.802
-      IO::Async::OS::linux 0.802
-      IO::Async::PID 0.802
-      IO::Async::Process 0.802
-      IO::Async::Protocol 0.802
-      IO::Async::Protocol::LineStream 0.802
-      IO::Async::Protocol::Stream 0.802
-      IO::Async::Resolver 0.802
-      IO::Async::Routine 0.802
-      IO::Async::Signal 0.802
-      IO::Async::Socket 0.802
-      IO::Async::Stream 0.802
-      IO::Async::Test 0.802
-      IO::Async::Timer 0.802
-      IO::Async::Timer::Absolute 0.802
-      IO::Async::Timer::Countdown 0.802
-      IO::Async::Timer::Periodic 0.802
+      Future::IO::Impl::IOAsync 0.803
+      IO::Async 0.803
+      IO::Async::Channel 0.803
+      IO::Async::Debug 0.803
+      IO::Async::File 0.803
+      IO::Async::FileStream 0.803
+      IO::Async::Function 0.803
+      IO::Async::Future 0.803
+      IO::Async::Handle 0.803
+      IO::Async::Internals::ChildManager 0.803
+      IO::Async::Internals::FunctionWorker 0.803
+      IO::Async::Listener 0.803
+      IO::Async::Loop 0.803
+      IO::Async::Loop::Poll 0.803
+      IO::Async::Loop::Select 0.803
+      IO::Async::LoopTests 0.803
+      IO::Async::Metrics 0.803
+      IO::Async::Notifier 0.803
+      IO::Async::OS 0.803
+      IO::Async::OS::MSWin32 0.803
+      IO::Async::OS::cygwin 0.803
+      IO::Async::OS::linux 0.803
+      IO::Async::PID 0.803
+      IO::Async::Process 0.803
+      IO::Async::Protocol 0.803
+      IO::Async::Protocol::LineStream 0.803
+      IO::Async::Protocol::Stream 0.803
+      IO::Async::Resolver 0.803
+      IO::Async::Routine 0.803
+      IO::Async::Signal 0.803
+      IO::Async::Socket 0.803
+      IO::Async::Stream 0.803
+      IO::Async::Test 0.803
+      IO::Async::Timer 0.803
+      IO::Async::Timer::Absolute 0.803
+      IO::Async::Timer::Countdown 0.803
+      IO::Async::Timer::Periodic 0.803
     requirements:
       Exporter 5.57
       File::stat 0
-      Future 0.33
+      Future 0.44
       Future::Utils 0.18
       IO::Poll 0
       List::Util 0
@@ -1101,7 +997,7 @@ DISTRIBUTIONS
       Storable 0
       Struct::Dumb 0
       Time::HiRes 0
-      perl 5.008004
+      perl 5.014
   IO-Async-Loop-Mojo-0.07
     pathname: P/PE/PEVANS/IO-Async-Loop-Mojo-0.07.tar.gz
     provides:
@@ -1110,85 +1006,55 @@ DISTRIBUTIONS
       IO::Async::Loop 0.49
       Module::Build 0.4004
       Mojolicious 2.65
-  IO-HTML-1.004
-    pathname: C/CJ/CJM/IO-HTML-1.004.tar.gz
+  IO-Socket-SSL-2.089
+    pathname: S/SU/SULLR/IO-Socket-SSL-2.089.tar.gz
     provides:
-      IO::HTML 1.004
-    requirements:
-      Carp 0
-      Encode 2.10
-      Exporter 5.57
-      ExtUtils::MakeMaker 0
-      perl 5.008
-  IO-Socket-SSL-2.083
-    pathname: S/SU/SULLR/IO-Socket-SSL-2.083.tar.gz
-    provides:
-      IO::Socket::SSL 2.083
+      IO::Socket::SSL 2.089
       IO::Socket::SSL::Intercept 2.056
-      IO::Socket::SSL::OCSP_Cache 2.083
-      IO::Socket::SSL::OCSP_Resolver 2.083
+      IO::Socket::SSL::OCSP_Cache 2.089
+      IO::Socket::SSL::OCSP_Resolver 2.089
       IO::Socket::SSL::PublicSuffix undef
-      IO::Socket::SSL::SSL_Context 2.083
-      IO::Socket::SSL::SSL_HANDLE 2.083
-      IO::Socket::SSL::Session_Cache 2.083
-      IO::Socket::SSL::Trace 2.083
+      IO::Socket::SSL::SSL_Context 2.089
+      IO::Socket::SSL::SSL_HANDLE 2.089
+      IO::Socket::SSL::Session_Cache 2.089
+      IO::Socket::SSL::Trace 2.089
       IO::Socket::SSL::Utils 2.015
     requirements:
       ExtUtils::MakeMaker 0
-      Mozilla::CA 0
       Net::SSLeay 1.46
       Scalar::Util 0
-  Importer-0.026
-    pathname: E/EX/EXODIST/Importer-0.026.tar.gz
+  JSON-MaybeXS-1.004008
+    pathname: E/ET/ETHER/JSON-MaybeXS-1.004008.tar.gz
     provides:
-      Importer 0.026
-    requirements:
-      ExtUtils::MakeMaker 0
-      perl 5.008001
-  JSON-MaybeXS-1.004005
-    pathname: E/ET/ETHER/JSON-MaybeXS-1.004005.tar.gz
-    provides:
-      JSON::MaybeXS 1.004005
+      JSON::MaybeXS 1.004008
     requirements:
       Carp 0
-      Cpanel::JSON::XS 2.3310
+      Cpanel::JSON::XS 4.38
       ExtUtils::MakeMaker 0
       JSON::PP 2.27300
       Scalar::Util 0
       perl 5.006
-  LWP-MediaTypes-6.04
-    pathname: O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz
+  Log-Any-1.717
+    pathname: P/PR/PREACTION/Log-Any-1.717.tar.gz
     provides:
-      LWP::MediaTypes 6.04
-    requirements:
-      Carp 0
-      Exporter 0
-      ExtUtils::MakeMaker 0
-      File::Basename 0
-      Scalar::Util 0
-      perl 5.006002
-      strict 0
-  Log-Any-1.716
-    pathname: P/PR/PREACTION/Log-Any-1.716.tar.gz
-    provides:
-      Log::Any 1.716
-      Log::Any::Adapter 1.716
-      Log::Any::Adapter::Base 1.716
-      Log::Any::Adapter::Capture 1.716
-      Log::Any::Adapter::File 1.716
-      Log::Any::Adapter::Multiplex 1.716
-      Log::Any::Adapter::Null 1.716
-      Log::Any::Adapter::Stderr 1.716
-      Log::Any::Adapter::Stdout 1.716
-      Log::Any::Adapter::Syslog 1.716
-      Log::Any::Adapter::Test 1.716
-      Log::Any::Adapter::Util 1.716
-      Log::Any::Manager 1.716
-      Log::Any::Proxy 1.716
-      Log::Any::Proxy::Null 1.716
-      Log::Any::Proxy::Test 1.716
-      Log::Any::Proxy::WithStackTrace 1.716
-      Log::Any::Test 1.716
+      Log::Any 1.717
+      Log::Any::Adapter 1.717
+      Log::Any::Adapter::Base 1.717
+      Log::Any::Adapter::Capture 1.717
+      Log::Any::Adapter::File 1.717
+      Log::Any::Adapter::Multiplex 1.717
+      Log::Any::Adapter::Null 1.717
+      Log::Any::Adapter::Stderr 1.717
+      Log::Any::Adapter::Stdout 1.717
+      Log::Any::Adapter::Syslog 1.717
+      Log::Any::Adapter::Test 1.717
+      Log::Any::Adapter::Util 1.717
+      Log::Any::Manager 1.717
+      Log::Any::Proxy 1.717
+      Log::Any::Proxy::Null 1.717
+      Log::Any::Proxy::Test 1.717
+      Log::Any::Proxy::WithStackTrace 1.717
+      Log::Any::Test 1.717
     requirements:
       ExtUtils::MakeMaker 0
   Log-Any-Adapter-MojoLog-0.04
@@ -1200,12 +1066,21 @@ DISTRIBUTIONS
       Log::Any::Adapter 0.07
       Module::Build::Tiny 0.034
       Mojolicious 2.15
-  MIME-Types-2.24
-    pathname: M/MA/MARKOV/MIME-Types-2.24.tar.gz
+  MIME-Base32-1.303
+    pathname: R/RE/REHSACK/MIME-Base32-1.303.tar.gz
     provides:
-      MIME::Type 2.24
-      MIME::Types 2.24
-      MojoX::MIME::Types 2.24
+      MIME::Base32 1.303
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.008001
+      utf8 0
+  MIME-Types-2.26
+    pathname: M/MA/MARKOV/MIME-Types-2.26.tar.gz
+    provides:
+      MIME::Type 2.26
+      MIME::Types 2.26
+      MojoX::MIME::Types 2.26
     requirements:
       ExtUtils::MakeMaker 0
       File::Basename 0
@@ -1289,10 +1164,10 @@ DISTRIBUTIONS
       Text::ParseWords 0
       perl 5.006001
       version 0.87
-  Module-Build-Tiny-0.046
-    pathname: L/LE/LEONT/Module-Build-Tiny-0.046.tar.gz
+  Module-Build-Tiny-0.051
+    pathname: L/LE/LEONT/Module-Build-Tiny-0.051.tar.gz
     provides:
-      Module::Build::Tiny 0.046
+      Module::Build::Tiny 0.051
     requirements:
       CPAN::Meta 0
       DynaLoader 0
@@ -1326,17 +1201,6 @@ DISTRIBUTIONS
       ExtUtils::Typemaps 1.00
       ExtUtils::XSpp 0.11
       Module::Build 0.26
-  Module-Implementation-0.09
-    pathname: D/DR/DROLSKY/Module-Implementation-0.09.tar.gz
-    provides:
-      Module::Implementation 0.09
-    requirements:
-      Carp 0
-      ExtUtils::MakeMaker 0
-      Module::Runtime 0.012
-      Try::Tiny 0
-      strict 0
-      warnings 0
   Module-Pluggable-5.2
     pathname: S/SI/SIMONW/Module-Pluggable-5.2.tar.gz
     provides:
@@ -1386,14 +1250,15 @@ DISTRIBUTIONS
       URI::db 0.15
       URI::file 4.21
       perl 5.010001
-  Mojolicious-9.33
-    pathname: S/SR/SRI/Mojolicious-9.33.tar.gz
+  Mojolicious-9.38
+    pathname: S/SR/SRI/Mojolicious-9.38.tar.gz
     provides:
       Mojo undef
       Mojo::Asset undef
       Mojo::Asset::File undef
       Mojo::Asset::Memory undef
       Mojo::Base undef
+      Mojo::BaseUtil undef
       Mojo::ByteStream undef
       Mojo::Cache undef
       Mojo::Collection undef
@@ -1455,7 +1320,7 @@ DISTRIBUTIONS
       Mojo::UserAgent::Transactor undef
       Mojo::Util undef
       Mojo::WebSocket undef
-      Mojolicious 9.33
+      Mojolicious 9.38
       Mojolicious::Command undef
       Mojolicious::Command::Author::cpanify undef
       Mojolicious::Command::Author::generate undef
@@ -1504,6 +1369,17 @@ DISTRIBUTIONS
       IO::Socket::IP 0.37
       Sub::Util 1.41
       perl 5.016
+  Mojolicious-Plugin-OpenTelemetry-0.003
+    pathname: J/JJ/JJATRIA/Mojolicious-Plugin-OpenTelemetry-0.003.tar.gz
+    provides:
+      Mojolicious::Plugin::OpenTelemetry 0.003
+    requirements:
+      Feature::Compat::Try 0
+      Module::Build::Tiny 0.034
+      Mojolicious 0
+      OpenTelemetry 0.019
+      Syntax::Keyword::Dynamically 0
+      perl 5.013010
   Moo-2.005005
     pathname: H/HA/HAARG/Moo-2.005005.tar.gz
     provides:
@@ -1539,20 +1415,13 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       Module::Runtime 0.014
-  Mozilla-CA-20230801
-    pathname: L/LW/LWP/Mozilla-CA-20230801.tar.gz
+  Mutex-1.011
+    pathname: M/MA/MARIOROY/Mutex-1.011.tar.gz
     provides:
-      Mozilla::CA 20230801
-    requirements:
-      ExtUtils::MakeMaker 0
-      perl 5.006
-  Mutex-1.009
-    pathname: M/MA/MARIOROY/Mutex-1.009.tar.gz
-    provides:
-      Mutex 1.009
-      Mutex::Channel 1.009
-      Mutex::Flock 1.009
-      Mutex::Util 1.009
+      Mutex 1.011
+      Mutex::Channel 1.011
+      Mutex::Flock 1.011
+      Mutex::Util 1.011
     requirements:
       Carp 0
       Errno 0
@@ -1564,38 +1433,11 @@ DISTRIBUTIONS
       perl 5.008001
       strict 0
       warnings 0
-  Net-Async-HTTP-0.49
-    pathname: P/PE/PEVANS/Net-Async-HTTP-0.49.tar.gz
+  Net-SSLeay-1.94
+    pathname: C/CH/CHRISN/Net-SSLeay-1.94.tar.gz
     provides:
-      Net::Async::HTTP 0.49
-      Net::Async::HTTP::Connection 0.49
-      Net::Async::HTTP::StallTimer 0.49
-    requirements:
-      Future 0.28
-      Future::Utils 0.16
-      HTTP::Cookies 0
-      HTTP::Request 0
-      HTTP::Request::Common 0
-      HTTP::Response 0
-      IO::Async::Loop 0.59
-      IO::Async::Stream 0.59
-      IO::Async::Test 0
-      IO::Async::Timer::Countdown 0
-      List::Util 1.29
-      Metrics::Any 0.05
-      Module::Build 0.4004
-      Socket 2.010
-      Struct::Dumb 0.07
-      Test2::V0 0.000147
-      Test::Metrics::Any 0
-      Time::HiRes 0
-      URI 0
-      perl 5.014
-  Net-SSLeay-1.92
-    pathname: C/CH/CHRISN/Net-SSLeay-1.92.tar.gz
-    provides:
-      Net::SSLeay 1.92
-      Net::SSLeay::Handle 1.92
+      Net::SSLeay 1.94
+      Net::SSLeay::Handle 1.94
     requirements:
       English 0
       ExtUtils::MakeMaker 0
@@ -1604,65 +1446,66 @@ DISTRIBUTIONS
       Text::Wrap 0
       constant 0
       perl 5.008001
-  Object-Pad-0.79
-    pathname: P/PE/PEVANS/Object-Pad-0.79.tar.gz
+  Object-Pad-0.814
+    pathname: P/PE/PEVANS/Object-Pad-0.814.tar.gz
     provides:
-      Object::Pad 0.79
-      Object::Pad::ExtensionBuilder 0.79
-      Object::Pad::MOP::Class 0.79
-      Object::Pad::MOP::Field 0.79
-      Object::Pad::MOP::FieldAttr 0.79
-      Object::Pad::MOP::Method 0.79
-      Object::Pad::MetaFunctions 0.79
+      Object::Pad 0.814
+      Object::Pad::ExtensionBuilder 0.814
+      Object::Pad::MOP::Class 0.814
+      Object::Pad::MOP::Field 0.814
+      Object::Pad::MOP::FieldAttr 0.814
+      Object::Pad::MOP::Method 0.814
+      Object::Pad::MetaFunctions 0.814
     requirements:
       ExtUtils::CBuilder 0
+      File::ShareDir 1.00
       Module::Build 0.4004
-      XS::Parse::Keyword 0.29
-      XS::Parse::Keyword::Builder 0.29
-      XS::Parse::Sublike 0.15
-      XS::Parse::Sublike::Builder 0.15
+      XS::Parse::Keyword 0.46
+      XS::Parse::Keyword::Builder 0.46
+      XS::Parse::Sublike 0.25
+      XS::Parse::Sublike::Builder 0.25
       perl 5.018
-  OpenTelemetry-0.015
-    pathname: J/JJ/JJATRIA/OpenTelemetry-0.015.tar.gz
+  OpenTelemetry-0.023
+    pathname: J/JJ/JJATRIA/OpenTelemetry-0.023.tar.gz
     provides:
-      OpenTelemetry 0.015
-      OpenTelemetry::Attributes 0.015
-      OpenTelemetry::Baggage 0.015
-      OpenTelemetry::Constants 0.015
-      OpenTelemetry::Context 0.015
-      OpenTelemetry::Exporter 0.015
-      OpenTelemetry::Integration 0.015
-      OpenTelemetry::Integration::DBI 0.015
-      OpenTelemetry::Integration::HTTP::Tiny 0.015
-      OpenTelemetry::Integration::LWP::UserAgent 0.015
-      OpenTelemetry::Propagator 0.015
-      OpenTelemetry::Propagator::Baggage 0.015
-      OpenTelemetry::Propagator::Composite 0.015
-      OpenTelemetry::Propagator::None 0.015
-      OpenTelemetry::Propagator::TextMap 0.015
-      OpenTelemetry::Propagator::TraceContext 0.015
-      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.015
-      OpenTelemetry::Propagator::TraceContext::TraceParent 0.015
-      OpenTelemetry::Propagator::TraceContext::TraceState 0.015
-      OpenTelemetry::Trace 0.015
-      OpenTelemetry::Trace::Event 0.015
-      OpenTelemetry::Trace::Link 0.015
-      OpenTelemetry::Trace::Span 0.015
-      OpenTelemetry::Trace::Span::Processor 0.015
-      OpenTelemetry::Trace::Span::Status 0.015
-      OpenTelemetry::Trace::SpanContext 0.015
-      OpenTelemetry::Trace::Tracer 0.015
-      OpenTelemetry::Trace::TracerProvider 0.015
-      OpenTelemetry::X 0.015
-      OpenTelemetry::X::Invalid 0.015
-      OpenTelemetry::X::Parsing 0.015
-      OpenTelemetry::X::Unsupported 0.015
+      OpenTelemetry 0.023
+      OpenTelemetry::Attributes 0.023
+      OpenTelemetry::Baggage 0.023
+      OpenTelemetry::Constants 0.023
+      OpenTelemetry::Context 0.023
+      OpenTelemetry::Exporter 0.023
+      OpenTelemetry::Integration 0.023
+      OpenTelemetry::Integration::DBI 0.023
+      OpenTelemetry::Integration::HTTP::Tiny 0.023
+      OpenTelemetry::Integration::LWP::UserAgent 0.023
+      OpenTelemetry::Propagator 0.023
+      OpenTelemetry::Propagator::Baggage 0.023
+      OpenTelemetry::Propagator::Composite 0.023
+      OpenTelemetry::Propagator::None 0.023
+      OpenTelemetry::Propagator::TextMap 0.023
+      OpenTelemetry::Propagator::TraceContext 0.023
+      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.023
+      OpenTelemetry::Propagator::TraceContext::TraceParent 0.023
+      OpenTelemetry::Propagator::TraceContext::TraceState 0.023
+      OpenTelemetry::Trace 0.023
+      OpenTelemetry::Trace::Event 0.023
+      OpenTelemetry::Trace::Link 0.023
+      OpenTelemetry::Trace::Span 0.023
+      OpenTelemetry::Trace::Span::Processor 0.023
+      OpenTelemetry::Trace::Span::Status 0.023
+      OpenTelemetry::Trace::SpanContext 0.023
+      OpenTelemetry::Trace::Tracer 0.023
+      OpenTelemetry::Trace::TracerProvider 0.023
+      OpenTelemetry::X 0.023
+      OpenTelemetry::X::Invalid 0.023
+      OpenTelemetry::X::Parsing 0.023
+      OpenTelemetry::X::Unsupported 0.023
     requirements:
       Bytes::Random::Secure 0
       Class::Method::Modifiers 0
       Exporter::Tiny 0.044
       Feature::Compat::Defer 0
-      Feature::Compat::Try 0
+      Feature::Compat::Try 0.05
       Future 0.26
       Future::AsyncAwait 0
       List::Util 1.45
@@ -1679,89 +1522,62 @@ DISTRIBUTIONS
       UUID::URandom 0
       X::Tiny 0
       perl v5.32.0
-  OpenTelemetry-Exporter-OTLP-0.011
-    pathname: J/JJ/JJATRIA/OpenTelemetry-Exporter-OTLP-0.011.tar.gz
+  OpenTelemetry-Exporter-OTLP-0.017
+    pathname: J/JJ/JJATRIA/OpenTelemetry-Exporter-OTLP-0.017.tar.gz
     provides:
-      OpenTelemetry::Exporter::OTLP 0.011
-      OpenTelemetry::Exporter::OTLP::Encoder::JSON 0.011
-      OpenTelemetry::Exporter::OTLP::Encoder::Protobuf 0.011
-      OpenTelemetry::Proto 0.011
+      OpenTelemetry::Exporter::OTLP 0.017
+      OpenTelemetry::Exporter::OTLP::Encoder::JSON 0.017
+      OpenTelemetry::Exporter::OTLP::Encoder::Protobuf 0.017
+      OpenTelemetry::Exporter::OTLP::Logs 0.017
+      OpenTelemetry::Exporter::OTLP::Traces 0.017
+      OpenTelemetry::Proto 0.017
     requirements:
       ExtUtils::MakeMaker 0
       Feature::Compat::Try 0
       File::Share 0
       File::ShareDir::Install 0.06
+      Future::AsyncAwait 0.38
       HTTP::Tiny 0
       JSON::MaybeXS 0
       Metrics::Any 0
-      Object::Pad 0
+      Object::Pad 0.74
+      OpenTelemetry 0.010
       Path::Tiny 0
       Syntax::Keyword::Dynamically 0
       Syntax::Keyword::Match 0
       Time::Piece 0
-      perl 5.020000
-  OpenTelemetry-SDK-0.014
-    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.014.tar.gz
+      perl 5.032000
+  OpenTelemetry-SDK-0.024
+    pathname: J/JJ/JJATRIA/OpenTelemetry-SDK-0.024.tar.gz
     provides:
-      OpenTelemetry::SDK 0.014
-      OpenTelemetry::SDK::Exporter::Console 0.014
-      OpenTelemetry::SDK::InstrumentationScope 0.014
-      OpenTelemetry::SDK::Resource 0.014
-      OpenTelemetry::SDK::Trace::Sampler 0.014
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.014
-      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.014
-      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.014
-      OpenTelemetry::SDK::Trace::Sampler::Result 0.014
-      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.014
-      OpenTelemetry::SDK::Trace::Span 0.014
-      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.014
-      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.014
-      OpenTelemetry::SDK::Trace::Span::Readable 0.014
-      OpenTelemetry::SDK::Trace::SpanLimits 0.014
-      OpenTelemetry::SDK::Trace::Tracer 0.014
-      OpenTelemetry::SDK::Trace::TracerProvider 0.014
+      OpenTelemetry::SDK 0.024
+      OpenTelemetry::SDK::Exporter::Console 0.024
+      OpenTelemetry::SDK::InstrumentationScope 0.024
+      OpenTelemetry::SDK::Resource 0.024
+      OpenTelemetry::SDK::Trace::Sampler 0.024
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOff 0.024
+      OpenTelemetry::SDK::Trace::Sampler::AlwaysOn 0.024
+      OpenTelemetry::SDK::Trace::Sampler::ParentBased 0.024
+      OpenTelemetry::SDK::Trace::Sampler::Result 0.024
+      OpenTelemetry::SDK::Trace::Sampler::TraceIDRatioBased 0.024
+      OpenTelemetry::SDK::Trace::Span 0.024
+      OpenTelemetry::SDK::Trace::Span::Processor::Batch 0.024
+      OpenTelemetry::SDK::Trace::Span::Processor::Simple 0.024
+      OpenTelemetry::SDK::Trace::Span::Readable 0.024
+      OpenTelemetry::SDK::Trace::SpanLimits 0.024
+      OpenTelemetry::SDK::Trace::Tracer 0.024
+      OpenTelemetry::SDK::Trace::TracerProvider 0.024
     requirements:
       Feature::Compat::Try 0
-      Future 0.26
       Future::AsyncAwait 0.38
       IO::Async::Loop 0
       Metrics::Any 0
       Module::Build::Tiny 0.034
       Mutex 0
       Object::Pad 0.74
-      OpenTelemetry 0
-      String::CRC32 0
+      OpenTelemetry 0.010
+      bigfloat 0.65
       perl v5.32.0
-  Package-Stash-0.40
-    pathname: E/ET/ETHER/Package-Stash-0.40.tar.gz
-    provides:
-      Package::Stash 0.40
-      Package::Stash::PP 0.40
-    requirements:
-      B 0
-      Carp 0
-      Dist::CheckConflicts 0.02
-      ExtUtils::MakeMaker 0
-      Getopt::Long 0
-      Module::Implementation 0.06
-      Package::Stash::XS 0.26
-      Scalar::Util 0
-      Symbol 0
-      Text::ParseWords 0
-      constant 0
-      perl 5.008001
-      strict 0
-      warnings 0
-  Package-Stash-XS-0.30
-    pathname: E/ET/ETHER/Package-Stash-XS-0.30.tar.gz
-    provides:
-      Package::Stash::XS 0.30
-    requirements:
-      ExtUtils::MakeMaker 0
-      XSLoader 0
-      perl 5.008001
-      strict 0
-      warnings 0
   Params-Util-1.102
     pathname: R/RE/REHSACK/Params-Util-1.102.tar.gz
     provides:
@@ -1778,11 +1594,11 @@ DISTRIBUTIONS
       Scalar::Util 1.18
       XSLoader 0.22
       parent 0
-  Path-Tiny-0.144
-    pathname: D/DA/DAGOLDEN/Path-Tiny-0.144.tar.gz
+  Path-Tiny-0.146
+    pathname: D/DA/DAGOLDEN/Path-Tiny-0.146.tar.gz
     provides:
-      Path::Tiny 0.144
-      Path::Tiny::Error 0.144
+      Path::Tiny 0.146
+      Path::Tiny::Error 0.146
     requirements:
       Carp 0
       Cwd 0
@@ -1918,38 +1734,26 @@ DISTRIBUTIONS
       Spiffy::mixin undef
     requirements:
       ExtUtils::MakeMaker 6.30
-  String-CRC32-2.100
-    pathname: L/LE/LEEJO/String-CRC32-2.100.tar.gz
-    provides:
-      String::CRC32 2.100
-    requirements:
-      ExtUtils::MakeMaker 0
   Struct-Dumb-0.14
     pathname: P/PE/PEVANS/Struct-Dumb-0.14.tar.gz
     provides:
       Struct::Dumb 0.14
     requirements:
       Module::Build 0.4004
-  Sub-Exporter-0.990
-    pathname: R/RJ/RJBS/Sub-Exporter-0.990.tar.gz
+  Sub-Exporter-0.991
+    pathname: R/RJ/RJBS/Sub-Exporter-0.991.tar.gz
     provides:
-      Sub::Exporter 0.990
-      Sub::Exporter::Util 0.990
+      Sub::Exporter 0.991
+      Sub::Exporter::Util 0.991
     requirements:
       Carp 0
       Data::OptList 0.100
       ExtUtils::MakeMaker 6.78
       Params::Util 0.14
       Sub::Install 0.92
-      perl 5.008000
+      perl 5.012
       strict 0
       warnings 0
-  Sub-Exporter-Progressive-0.001013
-    pathname: F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz
-    provides:
-      Sub::Exporter::Progressive 0.001013
-    requirements:
-      ExtUtils::MakeMaker 0
   Sub-Install-0.929
     pathname: R/RJ/RJBS/Sub-Install-0.929.tar.gz
     provides:
@@ -1971,21 +1775,10 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Scalar::Util 0
       perl 5.006
-  Syntax-Keyword-Defer-0.09
-    pathname: P/PE/PEVANS/Syntax-Keyword-Defer-0.09.tar.gz
+  Syntax-Keyword-Dynamically-0.14
+    pathname: P/PE/PEVANS/Syntax-Keyword-Dynamically-0.14.tar.gz
     provides:
-      Syntax::Keyword::Defer 0.09
-      Syntax::Keyword::Finally 0.09
-    requirements:
-      ExtUtils::CBuilder 0
-      Module::Build 0.4004
-      XS::Parse::Keyword 0.13
-      XS::Parse::Keyword::Builder 0.13
-      perl 5.014
-  Syntax-Keyword-Dynamically-0.12
-    pathname: P/PE/PEVANS/Syntax-Keyword-Dynamically-0.12.tar.gz
-    provides:
-      Syntax::Keyword::Dynamically 0.12
+      Syntax::Keyword::Dynamically 0.14
     requirements:
       ExtUtils::CBuilder 0
       Future::AsyncAwait::ExtensionBuilder 0.60
@@ -1993,10 +1786,11 @@ DISTRIBUTIONS
       XS::Parse::Keyword 0.13
       XS::Parse::Keyword::Builder 0.13
       perl 5.014
-  Syntax-Keyword-Match-0.13
-    pathname: P/PE/PEVANS/Syntax-Keyword-Match-0.13.tar.gz
+  Syntax-Keyword-Match-0.15
+    pathname: P/PE/PEVANS/Syntax-Keyword-Match-0.15.tar.gz
     provides:
-      Syntax::Keyword::Match 0.13
+      Syntax::Keyword::Match 0.15
+      Syntax::Keyword::Match::Deparse 0.15
     requirements:
       ExtUtils::CBuilder 0
       Module::Build 0.4004
@@ -2004,23 +1798,6 @@ DISTRIBUTIONS
       XS::Parse::Keyword 0.36
       XS::Parse::Keyword::Builder 0.36
       perl 5.016
-  Term-Table-0.016
-    pathname: E/EX/EXODIST/Term-Table-0.016.tar.gz
-    provides:
-      Term::Table 0.016
-      Term::Table::Cell 0.016
-      Term::Table::CellStack 0.016
-      Term::Table::HashBase 0.016
-      Term::Table::LineBreak 0.016
-      Term::Table::Spacer 0.016
-      Term::Table::Util 0.016
-    requirements:
-      Carp 0
-      ExtUtils::MakeMaker 0
-      Importer 0.024
-      List::Util 0
-      Scalar::Util 0
-      perl 5.008001
   Test-Base-0.89
     pathname: I/IN/INGY/Test-Base-0.89.tar.gz
     provides:
@@ -2096,25 +1873,16 @@ DISTRIBUTIONS
       Test::Builder 0
       Test::More 0.96
       perl 5.012
-  Test-Differences-0.70
-    pathname: D/DC/DCANTRELL/Test-Differences-0.70.tar.gz
+  Test-Differences-0.71
+    pathname: D/DC/DCANTRELL/Test-Differences-0.71.tar.gz
     provides:
-      Test::Differences 0.70
+      Test::Differences 0.71
     requirements:
       Capture::Tiny 0.24
       Data::Dumper 2.126
       ExtUtils::MakeMaker 0
       Test::More 0.88
       Text::Diff 1.43
-  Test-Metrics-Any-0.01
-    pathname: P/PE/PEVANS/Test-Metrics-Any-0.01.tar.gz
-    provides:
-      Test::Metrics::Any 0.01
-    requirements:
-      Metrics::Any::Adapter 0
-      Metrics::Any::Adapter::Test 0
-      Module::Build 0.4004
-      Test::Builder::Module 0
   Test-NoWarnings-1.06
     pathname: H/HA/HAARG/Test-NoWarnings-1.06.tar.gz
     provides:
@@ -2124,142 +1892,6 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test::Builder 0.86
       perl 5.006
-  Test2-Suite-0.000155
-    pathname: E/EX/EXODIST/Test2-Suite-0.000155.tar.gz
-    provides:
-      Test2::AsyncSubtest 0.000155
-      Test2::AsyncSubtest::Event::Attach 0.000155
-      Test2::AsyncSubtest::Event::Detach 0.000155
-      Test2::AsyncSubtest::Formatter 0.000155
-      Test2::AsyncSubtest::Hub 0.000155
-      Test2::Bundle 0.000155
-      Test2::Bundle::Extended 0.000155
-      Test2::Bundle::More 0.000155
-      Test2::Bundle::Simple 0.000155
-      Test2::Compare 0.000155
-      Test2::Compare::Array 0.000155
-      Test2::Compare::Bag 0.000155
-      Test2::Compare::Base 0.000155
-      Test2::Compare::Bool 0.000155
-      Test2::Compare::Custom 0.000155
-      Test2::Compare::DeepRef 0.000155
-      Test2::Compare::Delta 0.000155
-      Test2::Compare::Event 0.000155
-      Test2::Compare::EventMeta 0.000155
-      Test2::Compare::Float 0.000155
-      Test2::Compare::Hash 0.000155
-      Test2::Compare::Isa 0.000155
-      Test2::Compare::Meta 0.000155
-      Test2::Compare::Negatable 0.000155
-      Test2::Compare::Number 0.000155
-      Test2::Compare::Object 0.000155
-      Test2::Compare::OrderedSubset 0.000155
-      Test2::Compare::Pattern 0.000155
-      Test2::Compare::Ref 0.000155
-      Test2::Compare::Regex 0.000155
-      Test2::Compare::Scalar 0.000155
-      Test2::Compare::Set 0.000155
-      Test2::Compare::String 0.000155
-      Test2::Compare::Undef 0.000155
-      Test2::Compare::Wildcard 0.000155
-      Test2::Manual 0.000155
-      Test2::Manual::Anatomy 0.000155
-      Test2::Manual::Anatomy::API 0.000155
-      Test2::Manual::Anatomy::Context 0.000155
-      Test2::Manual::Anatomy::EndToEnd 0.000155
-      Test2::Manual::Anatomy::Event 0.000155
-      Test2::Manual::Anatomy::Hubs 0.000155
-      Test2::Manual::Anatomy::IPC 0.000155
-      Test2::Manual::Anatomy::Utilities 0.000155
-      Test2::Manual::Concurrency 0.000155
-      Test2::Manual::Contributing 0.000155
-      Test2::Manual::Testing 0.000155
-      Test2::Manual::Testing::Introduction 0.000155
-      Test2::Manual::Testing::Migrating 0.000155
-      Test2::Manual::Testing::Planning 0.000155
-      Test2::Manual::Testing::Todo 0.000155
-      Test2::Manual::Tooling 0.000155
-      Test2::Manual::Tooling::FirstTool 0.000155
-      Test2::Manual::Tooling::Formatter 0.000155
-      Test2::Manual::Tooling::Nesting 0.000155
-      Test2::Manual::Tooling::Plugin::TestExit 0.000155
-      Test2::Manual::Tooling::Plugin::TestingDone 0.000155
-      Test2::Manual::Tooling::Plugin::ToolCompletes 0.000155
-      Test2::Manual::Tooling::Plugin::ToolStarts 0.000155
-      Test2::Manual::Tooling::Subtest 0.000155
-      Test2::Manual::Tooling::TestBuilder 0.000155
-      Test2::Manual::Tooling::Testing 0.000155
-      Test2::Mock 0.000155
-      Test2::Plugin 0.000155
-      Test2::Plugin::BailOnFail 0.000155
-      Test2::Plugin::DieOnFail 0.000155
-      Test2::Plugin::ExitSummary 0.000155
-      Test2::Plugin::SRand 0.000155
-      Test2::Plugin::Times 0.000155
-      Test2::Plugin::UTF8 0.000155
-      Test2::Require 0.000155
-      Test2::Require::AuthorTesting 0.000155
-      Test2::Require::EnvVar 0.000155
-      Test2::Require::Fork 0.000155
-      Test2::Require::Module 0.000155
-      Test2::Require::Perl 0.000155
-      Test2::Require::RealFork 0.000155
-      Test2::Require::Threads 0.000155
-      Test2::Suite 0.000155
-      Test2::Todo 0.000155
-      Test2::Tools 0.000155
-      Test2::Tools::AsyncSubtest 0.000155
-      Test2::Tools::Basic 0.000155
-      Test2::Tools::Class 0.000155
-      Test2::Tools::ClassicCompare 0.000155
-      Test2::Tools::Compare 0.000155
-      Test2::Tools::Defer 0.000155
-      Test2::Tools::Encoding 0.000155
-      Test2::Tools::Event 0.000155
-      Test2::Tools::Exception 0.000155
-      Test2::Tools::Exports 0.000155
-      Test2::Tools::GenTemp 0.000155
-      Test2::Tools::Grab 0.000155
-      Test2::Tools::Mock 0.000155
-      Test2::Tools::Ref 0.000155
-      Test2::Tools::Refcount 0.000155
-      Test2::Tools::Spec 0.000155
-      Test2::Tools::Subtest 0.000155
-      Test2::Tools::Target 0.000155
-      Test2::Tools::Tester 0.000155
-      Test2::Tools::Warnings 0.000155
-      Test2::Util::Grabber 0.000155
-      Test2::Util::Guard 0.000155
-      Test2::Util::Importer 0.000155
-      Test2::Util::Ref 0.000155
-      Test2::Util::Stash 0.000155
-      Test2::Util::Sub 0.000155
-      Test2::Util::Table 0.000155
-      Test2::Util::Table::Cell 0.000155
-      Test2::Util::Table::LineBreak 0.000155
-      Test2::Util::Term 0.000155
-      Test2::Util::Times 0.000155
-      Test2::V0 0.000155
-      Test2::Workflow 0.000155
-      Test2::Workflow::BlockBase 0.000155
-      Test2::Workflow::Build 0.000155
-      Test2::Workflow::Runner 0.000155
-      Test2::Workflow::Task 0.000155
-      Test2::Workflow::Task::Action 0.000155
-      Test2::Workflow::Task::Group 0.000155
-    requirements:
-      B 0
-      Carp 0
-      Data::Dumper 0
-      Exporter 0
-      ExtUtils::MakeMaker 0
-      Scalar::Util 0
-      Term::Table 0.013
-      Test2::API 1.302176
-      Time::HiRes 0
-      overload 0
-      perl 5.008001
-      utf8 0
   Text-Diff-1.45
     pathname: N/NE/NEILB/Text-Diff-1.45.tar.gz
     provides:
@@ -2295,55 +1927,10 @@ DISTRIBUTIONS
       Scalar::Util 0
       Sub::Quote 0
       overload 0
-  TimeDate-2.33
-    pathname: A/AT/ATOOMIC/TimeDate-2.33.tar.gz
+  Try-Tiny-0.32
+    pathname: E/ET/ETHER/Try-Tiny-0.32.tar.gz
     provides:
-      Date::Format 2.24
-      Date::Format::Generic 2.24
-      Date::Language 1.10
-      Date::Language::Afar 0.99
-      Date::Language::Amharic 1.00
-      Date::Language::Austrian 1.01
-      Date::Language::Brazilian 1.01
-      Date::Language::Bulgarian 1.01
-      Date::Language::Chinese 1.00
-      Date::Language::Chinese_GB 1.01
-      Date::Language::Czech 1.01
-      Date::Language::Danish 1.01
-      Date::Language::Dutch 1.02
-      Date::Language::English 1.01
-      Date::Language::Finnish 1.01
-      Date::Language::French 1.04
-      Date::Language::Gedeo 0.99
-      Date::Language::German 1.02
-      Date::Language::Greek 1.00
-      Date::Language::Hungarian 1.01
-      Date::Language::Icelandic 1.01
-      Date::Language::Italian 1.01
-      Date::Language::Norwegian 1.01
-      Date::Language::Occitan 1.04
-      Date::Language::Oromo 0.99
-      Date::Language::Romanian 1.01
-      Date::Language::Russian 1.01
-      Date::Language::Russian_cp1251 1.01
-      Date::Language::Russian_koi8r 1.01
-      Date::Language::Sidama 0.99
-      Date::Language::Somali 0.99
-      Date::Language::Spanish 1.00
-      Date::Language::Swedish 1.01
-      Date::Language::Tigrinya 1.00
-      Date::Language::TigrinyaEritrean 1.00
-      Date::Language::TigrinyaEthiopian 1.00
-      Date::Language::Turkish 1.0
-      Date::Parse 2.33
-      Time::Zone 2.24
-      TimeDate 1.21
-    requirements:
-      ExtUtils::MakeMaker 0
-  Try-Tiny-0.31
-    pathname: E/ET/ETHER/Try-Tiny-0.31.tar.gz
-    provides:
-      Try::Tiny 0.31
+      Try::Tiny 0.32
     requirements:
       Carp 0
       Exporter 5.57
@@ -2352,53 +1939,62 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  URI-5.19
-    pathname: S/SI/SIMBABQUE/URI-5.19.tar.gz
+  URI-5.30
+    pathname: O/OA/OALDERS/URI-5.30.tar.gz
     provides:
-      URI 5.19
-      URI::Escape 5.19
-      URI::Heuristic 5.19
-      URI::IRI 5.19
-      URI::QueryParam 5.19
-      URI::Split 5.19
-      URI::URL 5.19
-      URI::WithBase 5.19
-      URI::data 5.19
-      URI::file 5.19
-      URI::file::Base 5.19
-      URI::file::FAT 5.19
-      URI::file::Mac 5.19
-      URI::file::OS2 5.19
-      URI::file::QNX 5.19
-      URI::file::Unix 5.19
-      URI::file::Win32 5.19
-      URI::ftp 5.19
-      URI::gopher 5.19
-      URI::http 5.19
-      URI::https 5.19
-      URI::ldap 5.19
-      URI::ldapi 5.19
-      URI::ldaps 5.19
-      URI::mailto 5.19
-      URI::mms 5.19
-      URI::news 5.19
-      URI::nntp 5.19
-      URI::nntps 5.19
-      URI::pop 5.19
-      URI::rlogin 5.19
-      URI::rsync 5.19
-      URI::rtsp 5.19
-      URI::rtspu 5.19
-      URI::sftp 5.19
-      URI::sip 5.19
-      URI::sips 5.19
-      URI::snews 5.19
-      URI::ssh 5.19
-      URI::telnet 5.19
-      URI::tn3270 5.19
-      URI::urn 5.19
-      URI::urn::isbn 5.19
-      URI::urn::oid 5.19
+      URI 5.30
+      URI::Escape 5.30
+      URI::Heuristic 5.30
+      URI::IRI 5.30
+      URI::QueryParam 5.30
+      URI::Split 5.30
+      URI::URL 5.30
+      URI::WithBase 5.30
+      URI::data 5.30
+      URI::file 5.30
+      URI::file::Base 5.30
+      URI::file::FAT 5.30
+      URI::file::Mac 5.30
+      URI::file::OS2 5.30
+      URI::file::QNX 5.30
+      URI::file::Unix 5.30
+      URI::file::Win32 5.30
+      URI::ftp 5.30
+      URI::ftpes 5.30
+      URI::ftps 5.30
+      URI::geo 5.30
+      URI::gopher 5.30
+      URI::http 5.30
+      URI::https 5.30
+      URI::icap 5.30
+      URI::icaps 5.30
+      URI::irc 5.30
+      URI::ircs 5.30
+      URI::ldap 5.30
+      URI::ldapi 5.30
+      URI::ldaps 5.30
+      URI::mailto 5.30
+      URI::mms 5.30
+      URI::news 5.30
+      URI::nntp 5.30
+      URI::nntps 5.30
+      URI::otpauth 5.30
+      URI::pop 5.30
+      URI::rlogin 5.30
+      URI::rsync 5.30
+      URI::rtsp 5.30
+      URI::rtspu 5.30
+      URI::scp 5.30
+      URI::sftp 5.30
+      URI::sip 5.30
+      URI::sips 5.30
+      URI::snews 5.30
+      URI::ssh 5.30
+      URI::telnet 5.30
+      URI::tn3270 5.30
+      URI::urn 5.30
+      URI::urn::isbn 5.30
+      URI::urn::oid 5.30
     requirements:
       Carp 0
       Cwd 0
@@ -2406,6 +2002,7 @@ DISTRIBUTIONS
       Encode 0
       Exporter 5.57
       ExtUtils::MakeMaker 0
+      MIME::Base32 0
       MIME::Base64 2
       Net::Domain 0
       Scalar::Util 0
@@ -2426,54 +2023,54 @@ DISTRIBUTIONS
       Test::More 0.88
       URI 1.40
       perl 5.008001
-  URI-db-0.21
-    pathname: D/DW/DWHEELER/URI-db-0.21.tar.gz
+  URI-db-0.22
+    pathname: D/DW/DWHEELER/URI-db-0.22.tar.gz
     provides:
-      URI::cassandra 0.21
-      URI::cockroach 0.21
-      URI::cockroachdb 0.21
-      URI::couch 0.21
-      URI::couchdb 0.21
-      URI::cubrid 0.21
-      URI::db 0.21
-      URI::db2 0.21
-      URI::derby 0.21
-      URI::exasol 0.21
-      URI::firebird 0.21
-      URI::hive 0.21
-      URI::impala 0.21
-      URI::informix 0.21
-      URI::ingres 0.21
-      URI::interbase 0.21
-      URI::ldapdb 0.21
-      URI::maria 0.21
-      URI::mariadb 0.21
-      URI::max 0.21
-      URI::maxdb 0.21
-      URI::monet 0.21
-      URI::monetdb 0.21
-      URI::mongo 0.21
-      URI::mongodb 0.21
-      URI::mssql 0.21
-      URI::mysql 0.21
-      URI::oracle 0.21
-      URI::pg 0.21
-      URI::pgsql 0.21
-      URI::pgxc 0.21
-      URI::postgres 0.21
-      URI::postgresql 0.21
-      URI::postgresxc 0.21
-      URI::redshift 0.21
-      URI::snowflake 0.21
-      URI::sqlite 0.21
-      URI::sqlite3 0.21
-      URI::sqlserver 0.21
-      URI::sybase 0.21
-      URI::teradata 0.21
-      URI::unify 0.21
-      URI::vertica 0.21
-      URI::yugabyte 0.21
-      URI::yugabytedb 0.21
+      URI::cassandra 0.22
+      URI::cockroach 0.22
+      URI::cockroachdb 0.22
+      URI::couch 0.22
+      URI::couchdb 0.22
+      URI::cubrid 0.22
+      URI::db 0.22
+      URI::db2 0.22
+      URI::derby 0.22
+      URI::exasol 0.22
+      URI::firebird 0.22
+      URI::hive 0.22
+      URI::impala 0.22
+      URI::informix 0.22
+      URI::ingres 0.22
+      URI::interbase 0.22
+      URI::ldapdb 0.22
+      URI::maria 0.22
+      URI::mariadb 0.22
+      URI::max 0.22
+      URI::maxdb 0.22
+      URI::monet 0.22
+      URI::monetdb 0.22
+      URI::mongo 0.22
+      URI::mongodb 0.22
+      URI::mssql 0.22
+      URI::mysql 0.22
+      URI::oracle 0.22
+      URI::pg 0.22
+      URI::pgsql 0.22
+      URI::pgxc 0.22
+      URI::postgres 0.22
+      URI::postgresql 0.22
+      URI::postgresxc 0.22
+      URI::redshift 0.22
+      URI::snowflake 0.22
+      URI::sqlite 0.22
+      URI::sqlite3 0.22
+      URI::sqlserver 0.22
+      URI::sybase 0.22
+      URI::teradata 0.22
+      URI::unify 0.22
+      URI::vertica 0.22
+      URI::yugabyte 0.22
+      URI::yugabytedb 0.22
     requirements:
       Module::Build 0.30
       Test::More 0.88
@@ -2503,25 +2100,6 @@ DISTRIBUTIONS
       perl 5.008
       strict 0
       warnings 0
-  Variable-Magic-0.63
-    pathname: V/VP/VPIT/Variable-Magic-0.63.tar.gz
-    provides:
-      Variable::Magic 0.63
-    requirements:
-      Carp 0
-      Config 0
-      Exporter 0
-      ExtUtils::MakeMaker 0
-      IO::Handle 0
-      IO::Select 0
-      IPC::Open3 0
-      POSIX 0
-      Socket 0
-      Test::More 0
-      XSLoader 0
-      base 0
-      lib 0
-      perl 5.008
   X-Tiny-0.22
     pathname: F/FE/FELIPE/X-Tiny-0.22.tar.gz
     provides:
@@ -2532,34 +2110,28 @@ DISTRIBUTIONS
       Module::Runtime 0
       overload 0
       perl 5.010000
-  XS-Parse-Keyword-0.36
-    pathname: P/PE/PEVANS/XS-Parse-Keyword-0.36.tar.gz
+  XS-Parse-Keyword-0.46
+    pathname: P/PE/PEVANS/XS-Parse-Keyword-0.46.tar.gz
     provides:
-      XS::Parse::Infix 0.36
-      XS::Parse::Infix::Builder 0.36
-      XS::Parse::Keyword 0.36
-      XS::Parse::Keyword::Builder 0.36
+      XS::Parse::Infix 0.46
+      XS::Parse::Infix::Builder 0.46
+      XS::Parse::Keyword 0.46
+      XS::Parse::Keyword::Builder 0.46
     requirements:
       ExtUtils::CBuilder 0
       ExtUtils::CChecker 0.11
       ExtUtils::ParseXS 3.16
+      File::ShareDir 1.00
       Module::Build 0.4004
       perl 5.014
-  XS-Parse-Sublike-0.18
-    pathname: P/PE/PEVANS/XS-Parse-Sublike-0.18.tar.gz
+  XS-Parse-Sublike-0.28
+    pathname: P/PE/PEVANS/XS-Parse-Sublike-0.28.tar.gz
     provides:
-      XS::Parse::Sublike 0.18
-      XS::Parse::Sublike::Builder 0.18
+      Sublike::Extended 0.28
+      XS::Parse::Sublike 0.28
+      XS::Parse::Sublike::Builder 0.28
     requirements:
       ExtUtils::CBuilder 0
+      File::ShareDir 1.00
       Module::Build 0.4004
       perl 5.016
-  namespace-clean-0.27
-    pathname: R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz
-    provides:
-      namespace::clean 0.27
-    requirements:
-      B::Hooks::EndOfScope 0.12
-      ExtUtils::MakeMaker 0
-      Package::Stash 0.23
-      perl 5.008001
