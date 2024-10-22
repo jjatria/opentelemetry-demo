@@ -12,5 +12,5 @@ requires 'OpenTelemetry::SDK';
 requires 'Compress::Zlib';
 requires 'Google::ProtocolBuffers::Dynamic';
 
-# Only for testing
+# To test the SQL integration
 requires 'Mojo::SQLite';
