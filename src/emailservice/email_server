@@ -24,11 +24,17 @@ use Email::Stuffer;
 use Mojo::SQLite;
 use HTTP::Tiny;
 
-use lib 'lib';
-
 plugin 'OpenTelemetry';
 
 helper sql => sub { state $sql = Mojo::SQLite->new; $sql };
+
+# TODO: Send Mojo::Log output to Log::Any. Should this be
+# its own separate distribution? Like, an actually working version
+# of the spirit of the failed MojoX::Log::Any
+use Log::Any '$logger';
+app->log->on( message => sub ( $, $level, @lines ) {
+    $logger->$level( join ' ', @lines );
+});
 
 app->sql->migrations->name('test')->from_string(<<'EOF')->migrate;
 -- 1 up

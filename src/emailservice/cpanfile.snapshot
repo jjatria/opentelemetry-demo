@@ -1504,6 +1504,17 @@ DISTRIBUTIONS
       IO::Socket::IP 0.37
       Sub::Util 1.41
       perl 5.016
+  Mojolicious-Plugin-OpenTelemetry-0.001
+    pathname: J/JJ/JJATRIA/Mojolicious-Plugin-OpenTelemetry-0.001.tar.gz
+    provides:
+      Mojolicious::Plugin::OpenTelemetry 0.001
+    requirements:
+      Feature::Compat::Try 0
+      Module::Build::Tiny 0.034
+      Mojolicious 0
+      OpenTelemetry 0.019
+      Syntax::Keyword::Dynamically 0
+      perl 5.013010
   Moo-2.005005
     pathname: H/HA/HAARG/Moo-2.005005.tar.gz
     provides:
@@ -1622,47 +1633,47 @@ DISTRIBUTIONS
       XS::Parse::Sublike 0.15
       XS::Parse::Sublike::Builder 0.15
       perl 5.018
-  OpenTelemetry-0.015
-    pathname: J/JJ/JJATRIA/OpenTelemetry-0.015.tar.gz
+  OpenTelemetry-0.019
+    pathname: J/JJ/JJATRIA/OpenTelemetry-0.019.tar.gz
     provides:
-      OpenTelemetry 0.015
-      OpenTelemetry::Attributes 0.015
-      OpenTelemetry::Baggage 0.015
-      OpenTelemetry::Constants 0.015
-      OpenTelemetry::Context 0.015
-      OpenTelemetry::Exporter 0.015
-      OpenTelemetry::Integration 0.015
-      OpenTelemetry::Integration::DBI 0.015
-      OpenTelemetry::Integration::HTTP::Tiny 0.015
-      OpenTelemetry::Integration::LWP::UserAgent 0.015
-      OpenTelemetry::Propagator 0.015
-      OpenTelemetry::Propagator::Baggage 0.015
-      OpenTelemetry::Propagator::Composite 0.015
-      OpenTelemetry::Propagator::None 0.015
-      OpenTelemetry::Propagator::TextMap 0.015
-      OpenTelemetry::Propagator::TraceContext 0.015
-      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.015
-      OpenTelemetry::Propagator::TraceContext::TraceParent 0.015
-      OpenTelemetry::Propagator::TraceContext::TraceState 0.015
-      OpenTelemetry::Trace 0.015
-      OpenTelemetry::Trace::Event 0.015
-      OpenTelemetry::Trace::Link 0.015
-      OpenTelemetry::Trace::Span 0.015
-      OpenTelemetry::Trace::Span::Processor 0.015
-      OpenTelemetry::Trace::Span::Status 0.015
-      OpenTelemetry::Trace::SpanContext 0.015
-      OpenTelemetry::Trace::Tracer 0.015
-      OpenTelemetry::Trace::TracerProvider 0.015
-      OpenTelemetry::X 0.015
-      OpenTelemetry::X::Invalid 0.015
-      OpenTelemetry::X::Parsing 0.015
-      OpenTelemetry::X::Unsupported 0.015
+      OpenTelemetry 0.019
+      OpenTelemetry::Attributes 0.019
+      OpenTelemetry::Baggage 0.019
+      OpenTelemetry::Constants 0.019
+      OpenTelemetry::Context 0.019
+      OpenTelemetry::Exporter 0.019
+      OpenTelemetry::Integration 0.019
+      OpenTelemetry::Integration::DBI 0.019
+      OpenTelemetry::Integration::HTTP::Tiny 0.019
+      OpenTelemetry::Integration::LWP::UserAgent 0.019
+      OpenTelemetry::Propagator 0.019
+      OpenTelemetry::Propagator::Baggage 0.019
+      OpenTelemetry::Propagator::Composite 0.019
+      OpenTelemetry::Propagator::None 0.019
+      OpenTelemetry::Propagator::TextMap 0.019
+      OpenTelemetry::Propagator::TraceContext 0.019
+      OpenTelemetry::Propagator::TraceContext::TraceFlags 0.019
+      OpenTelemetry::Propagator::TraceContext::TraceParent 0.019
+      OpenTelemetry::Propagator::TraceContext::TraceState 0.019
+      OpenTelemetry::Trace 0.019
+      OpenTelemetry::Trace::Event 0.019
+      OpenTelemetry::Trace::Link 0.019
+      OpenTelemetry::Trace::Span 0.019
+      OpenTelemetry::Trace::Span::Processor 0.019
+      OpenTelemetry::Trace::Span::Status 0.019
+      OpenTelemetry::Trace::SpanContext 0.019
+      OpenTelemetry::Trace::Tracer 0.019
+      OpenTelemetry::Trace::TracerProvider 0.019
+      OpenTelemetry::X 0.019
+      OpenTelemetry::X::Invalid 0.019
+      OpenTelemetry::X::Parsing 0.019
+      OpenTelemetry::X::Unsupported 0.019
     requirements:
       Bytes::Random::Secure 0
       Class::Method::Modifiers 0
       Exporter::Tiny 0.044
       Feature::Compat::Defer 0
-      Feature::Compat::Try 0
+      Feature::Compat::Try 0.05
       Future 0.26
       Future::AsyncAwait 0
       List::Util 1.45
