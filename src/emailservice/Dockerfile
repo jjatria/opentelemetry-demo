@@ -1,7 +1,7 @@
 # Copyright The OpenTelemetry Authors
 # SPDX-License-Identifier: Apache-2.0
 
-FROM perl:5.38 as base
+FROM perl:5.38 AS base
 
 # For OTLP exporter
 RUN apt-get update \
@@ -34,7 +34,7 @@ RUN cpm install --global
 
 RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
 
-FROM builder as release
+FROM builder AS release
 
 WORKDIR /email_server
 
