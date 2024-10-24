@@ -15,31 +15,31 @@ FROM base AS builder
 
 WORKDIR /tmp
 
-COPY cpanfile cpanfile.snapshot .
+COPY ./src/emailservice/cpanfile ./src/emailservice/cpanfile.snapshot .
 
 RUN cpm install --global
 
 # # Uncomment following lines to install from submodules
 # # Install dev version of API
-# COPY ./api/ /tmp/api/
+# COPY ./src/emailservice/api/ /tmp/api/
 # RUN cpanm --verbose /tmp/api
 #
 # # Install dev version of SDK
-# COPY ./sdk/ /tmp/sdk/
+# COPY ./src/emailservice/sdk/ /tmp/sdk/
 # RUN cpanm --verbose /tmp/sdk
 #
-# Install dev version of OTLP exporter
-# COPY ./otlp/ /tmp/otlp/
+# # Install dev version of OTLP exporter
+# COPY ./src/emailservice/otlp/ /tmp/otlp/
 # RUN cpanm --verbose /tmp/otlp
-#
-# RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
+
+RUN rm -rf /tmp/api /tmp/sdk /tmp/otlp
 
 FROM builder as release
 
 WORKDIR /email_server
 
-COPY email_server .
-COPY templates templates
+COPY ./src/emailservice/email_server .
+COPY ./src/emailservice/templates templates
 
 EXPOSE ${EMAIL_SERVICE_PORT}
 
